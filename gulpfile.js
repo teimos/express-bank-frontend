@@ -39,6 +39,7 @@ gulp.task('less', function() {
 			.pipe(gulp.dest('assets/css'));
 });
 
+//Minify Images
 gulp.task('img', function () {
     return gulp.src('src/img/*')
         .pipe(imagemin({
@@ -49,11 +50,6 @@ gulp.task('img', function () {
         .pipe(gulp.dest('assets/img'));
 });
 
-gulp.task('wiredep',function(){
-
-	return require('wiredep')({ src: 'index.html' });
-})
-
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
 	return gulp.src('src/js/*.js')
@@ -63,6 +59,11 @@ gulp.task('scripts', function() {
 		.pipe(uglify())
 		.pipe(gulp.dest('assets/js'));
 });
+
+//Wiredep
+gulp.task('wiredep',function(){
+	return require('wiredep')({ src: 'index.html' });
+})
 
 // Watch Files For Changes
 gulp.task('watch', function() {
