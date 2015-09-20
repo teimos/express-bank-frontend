@@ -1,16 +1,422 @@
 <!DOCTYPE html>
 <html>
 <head lang="ru">
-	<meta charset="UTF-8">
-	<title></title>
-	<!-- bower:css -->
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-	<!-- endbower -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Восточный Экспресс Банк</title>
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/all.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-	<!-- bower:js -->
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	<!-- endbower -->
+
+<header class="main-header container">
+    <div class="row row-no-padding">
+        <div class="col-md-3">
+            <a class="main-header__logo" href="/">
+                <img src="assets/img/logo.png"/>
+            </a>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+            <div class="choose-city">
+                <div class="choose-city__caption">Выберите ваш город:</div>
+                <div class="choose-city__current-city">Хабаровск</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="main-header__phone background_blue">
+                <div class="main-header__phone__caption main-header__phone__caption_top">
+                    Телефон горячей линии
+                </div>
+                <div class="main-header__phone__numbers">
+                    8-800-100-7-100
+                </div>
+                <div class="main-header__phone__caption main-header__phone__caption_bottom">
+                    (Бесплатно по России)
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="main-header__out background_red">
+                <a class="main-header__out__link" href="#TODO">Перейти на основной сайт банка</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="cities container">
+    <div class="cities__wrapper row row-no-padding">
+        <div class="col-md-12">
+            <form action="" class="cities__form">
+                <input class="cities__form__input" type="text" name="city" placeholder="ВВЕДИТЕ СВОЙ ГОРОД" value=""/>
+            </form>
+        </div>
+
+        <div class="col-md-2">
+            <div class="cities__wrapper__col">
+                <a class="cities__link" href="">Москва</a>
+                <a class="cities__link" href="">Хабаровск</a>
+                <a class="cities__link" href="">Комсомольск-на-Амуре</a>
+                <a class="cities__link" href="">Тында</a>
+                <a class="cities__link" href="">Санкт-Петербург</a>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="cities__wrapper__col">
+                <a class="cities__link" href="">Москва</a>
+                <a class="cities__link" href="">Хабаровск</a>
+                <a class="cities__link" href="">Комсомольск-на-Амуре</a>
+                <a class="cities__link" href="">Тында</a>
+                <a class="cities__link" href="">Санкт-Петербург</a>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="cities__wrapper__col">
+                <a class="cities__link" href="">Москва</a>
+                <a class="cities__link" href="">Хабаровск</a>
+                <a class="cities__link" href="">Комсомольск-на-Амуре</a>
+                <a class="cities__link" href="">Тында</a>
+                <a class="cities__link" href="">Санкт-Петербург</a>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="cities__wrapper__col">
+                <a class="cities__link" href="">Москва</a>
+                <a class="cities__link" href="">Хабаровск</a>
+                <a class="cities__link" href="">Комсомольск-на-Амуре</a>
+                <a class="cities__link" href="">Тында</a>
+                <a class="cities__link" href="">Санкт-Петербург</a>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="cities__wrapper__col">
+                <a class="cities__link" href="">Москва</a>
+                <a class="cities__link" href="">Хабаровск</a>
+                <a class="cities__link" href="">Комсомольск-на-Амуре</a>
+                <a class="cities__link" href="">Тында</a>
+                <a class="cities__link" href="">Санкт-Петербург</a>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="cities__wrapper__col">
+                <a class="cities__link" href="">Москва</a>
+                <a class="cities__link" href="">Хабаровск</a>
+                <a class="cities__link" href="">Комсомольск-на-Амуре</a>
+                <a class="cities__link" href="">Тында</a>
+                <a class="cities__link" href="">Санкт-Петербург</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="promo container">
+    <div class="row row-no-padding">
+        <div class="col-md-4">
+            <div class="promo__card background_red">
+                <div class="promo__card__title">
+                    Гасить задолженность - это важно!
+                </div>
+                <div class="promo__card__text">
+                    Общественные отношения, возникающие между субъектами экономических отношений по поводу движения
+                    стоимости. Кредитные отношения могут выражаться в разных формах кредита (коммерческий кредит,
+                    банковский кредит и др.), займе, лизинге, факторинге и т. д.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="promo__slider">
+                <ul>
+                    <li>
+                        <div class="promo__slider__slide promo__slider__slide_1">
+                            <div class="promo__slider__slide_1__title promo__slider__slide_1__title_top">
+                                Надоели кислые кредиты?
+                            </div>
+                            <div class="promo__slider__slide_1__title promo__slider__slide_1__title_bottom">
+                                Приходи за сочными!
+                            </div>
+                            <div class="promo__slider__slide_1__image"></div>
+                            <div class="promo__slider__slide_1__list">
+                                <div class="promo__slider__slide_1__list__item"><b>20% - отличная ставка</b></div>
+                                <div class="promo__slider__slide_1__list__item">Сумма кредита <b>от 25 000<br/> до 50
+                                    000 руб.</b></div>
+                                <div class="promo__slider__slide_1__list__item">Срок кредита <b>от 12 до<br/> 36 месяцев</b>
+                                </div>
+                                <div class="promo__slider__slide_1__list__item"><b>Быстрое</b> принятие решения</div>
+                                <div class="promo__slider__slide_1__list__item">Удобная онлайн заявка на сайте</div>
+                            </div>
+                            <a href="" class="promo__slider__slide_1__button">
+                                Хочу оформить
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="promo__slider__slide promo__slider__slide_1">
+                            <div class="promo__slider__slide_1__title promo__slider__slide_1__title_top">
+                                Надоели кислые кредиты?
+                            </div>
+                            <div class="promo__slider__slide_1__title promo__slider__slide_1__title_bottom">
+                                Приходи за сочными!
+                            </div>
+                            <div class="promo__slider__slide_1__image"></div>
+                            <div class="promo__slider__slide_1__list">
+                                <div class="promo__slider__slide_1__list__item"><b>20% - отличная ставка</b></div>
+                                <div class="promo__slider__slide_1__list__item">Сумма кредита <b>от 25 000<br/> до 50
+                                    000 руб.</b></div>
+                                <div class="promo__slider__slide_1__list__item">Срок кредита <b>от 12 до<br/> 36 месяцев</b>
+                                </div>
+                                <div class="promo__slider__slide_1__list__item"><b>Быстрое</b> принятие решения</div>
+                                <div class="promo__slider__slide_1__list__item">Удобная онлайн заявка на сайте</div>
+                            </div>
+                            <a href="" class="promo__slider__slide_1__button">
+                                Хочу оформить
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-menu">
+    <div class="container">
+        <div class="row row-no-padding">
+            <div class="main-menu__column main-menu__column__kak-oplachivat col-md-2">
+                <a class="main-menu__link" href="#tab1">
+                    <div class="main-menu__link__shape"><i class="icon icon-kak_oplachivat"></i></div>
+                    <div class="main-menu__link__caption">Как оплачивать кредит?</div>
+                </a>
+            </div>
+            <div class="main-menu__column main-menu__column__naiti-tochku-oplati col-md-2">
+                <a class="main-menu__link" href="#tab2">
+                    <div class="main-menu__link__shape"><i class="icon icon-naiti_tochku_oplati"></i></div>
+                    <div class="main-menu__link__caption">Найти точку оплаты</div>
+                </a>
+            </div>
+            <div class="main-menu__column main-menu__column__onlain-platej col-md-2 active">
+                <a class="main-menu__link active" href="#tab3">
+                    <div class="main-menu__link__shape"><i class="icon icon-onlain-platej"></i></div>
+                    <div class="main-menu__link__caption">Онлайн платеж с карты</div>
+                </a>
+            </div>
+            <div class="main-menu__column main-menu__column__oplata-s-telefona col-md-2">
+                <a class="main-menu__link" href="#tab4">
+                    <div class="main-menu__link__shape"><i class="icon icon-oplata_s_telefona"></i></div>
+                    <div class="main-menu__link__caption">Оплата с телефона</div>
+                </a>
+            </div>
+            <div class="main-menu__column main-menu__column__pochta-rossii col-md-2">
+                <a class="main-menu__link" href="#tab5">
+                    <div class="main-menu__link__shape"><i class="icon icon-pochta_rossii"></i></div>
+                    <div class="main-menu__link__caption">Оплата через "Почту России"</div>
+                </a>
+            </div>
+            <div class="main-menu__column main-menu__column__drugie-sposobi col-md-2">
+                <a class="main-menu__link" href="#tab6">
+                    <div class="main-menu__link__shape"><i class="icon icon-drugie_sposobi"></i></div>
+                    <div class="main-menu__link__caption">Другие способы оплаты</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tabs container">
+    <div id="tab3" class="tabs__tab active">
+        <div class="tabs__tab__accordeon">
+            <div id="tab1-item1" class="tabs__tab__accordeon__item">
+                <a href="#tab1-item1" class="tabs__tab__accordeon__item__title">Инструкция по оплате</a>
+
+                <div class="tabs__tab__accordeon__item__body">
+                    TODO: Разместить инструкцию по оплате
+                </div>
+            </div>
+            <div id="tab1-item2" class="tabs__tab__accordeon__item">
+                <a href="#tab1-item2" class="tabs__tab__accordeon__item__title">FAQ / Помощь</a>
+
+                <div class="tabs__tab__accordeon__item__body">
+                    <ul class="spoilers">
+                        <li class="spoilers__item">
+                            <a href="#" class="spoilers__item__title">
+                                <span>Я живу в Челябинске, как мне можно получить карту?</span>
+                            </a>
+
+                            <div class="spoilers__item__text">
+                                Сейчас мы доставляем карты по Москве, ближайшему Подмосковью, Санкт‑Петербургу,
+                                Екатеринбургу, Самаре, Тольятти, Нижнему Новгороду, Казани и Новосибирску. Но если вы
+                                готовы приехать за картой к нам в гости — она будет вас ждать (пожалуйста, напишите нам
+                                заранее).
+                            </div>
+                        </li>
+                        <li class="spoilers__item">
+                            <a href="#" class="spoilers__item__title">
+                                <span>Я не гражданин РФ, можно мне получить карту?</span>
+                            </a>
+
+                            <div class="spoilers__item__text">
+                                TODO: Разместить здесь текст
+                            </div>
+                        </li>
+                        <li class="spoilers__item">
+                            <a href="#" class="spoilers__item__title">
+                                <span>Какие документы нужны для оформления карты?</span>
+                            </a>
+
+                            <div class="spoilers__item__text">
+                                TODO: Разместить здесь текст
+                            </div>
+                        </li>
+                        <li class="spoilers__item">
+                            <a href="#" class="spoilers__item__title">
+                                <span>Сколько времени нужно, чтобы получить карту?</span>
+                            </a>
+
+                            <div class="spoilers__item__text">
+                                TODO: Разместить здесь текст
+                            </div>
+                        </li>
+                        <li class="spoilers__item">
+                            <a href="#" class="spoilers__item__title">
+                                <span>Пополнение банковским переводом</span>
+                            </a>
+
+                            <div class="spoilers__item__text">
+                                TODO: Разместить здесь текст
+                            </div>
+                        </li>
+                        <li class="spoilers__item">
+                            <a href="#" class="spoilers__item__title">
+                                <span>Внесение наличных через банкомат или терминал</span>
+                            </a>
+
+                            <div class="spoilers__item__text">
+                                TODO: Разместить здесь текст
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-systems"> <!-- add .container class if used outside -->
+            <div class="payment-systems__items row row-no-padding">
+                <a href="#payment1" class="payment-systems__items__item col-md-2">
+                    <img src="assets/img/payment-systems/s1.png" alt=""/>
+                </a>
+                <a href="#payment2" class="payment-systems__items__item col-md-2">
+                    <img src="assets/img/payment-systems/s2.png" alt=""/>
+                </a>
+                <a href="#payment3" class="payment-systems__items__item col-md-2 active">
+                    <img src="assets/img/payment-systems/s3.png" alt=""/>
+                </a>
+                <a href="#payment4" class="payment-systems__items__item col-md-2">
+                    <img src="assets/img/payment-systems/s4.png" alt=""/>
+                </a>
+                <a href="#payment5" class="payment-systems__items__item col-md-2">
+                    <img src="assets/img/payment-systems/s5.png" alt=""/>
+                </a>
+                <a href="#payment6" class="payment-systems__items__item col-md-2">
+                    <img src="assets/img/payment-systems/s6.png" alt=""/>
+                </a>
+            </div>
+            <div class="payment-systems__blocks row row-no-padding">
+                <div id="payment3" class="payment-systems__blocks__item active">
+                    <div class="col-md-12">
+                        <div class="h1 h_red">
+                            ЧЕРЕЗ ПЛАТЕЖНЫЙ СЕРВИС QIWI
+                        </div>
+
+                        <p>
+                            QIWI — это универсальный платежный сервис, который включает в себя крупнейшую в мире сеть
+                            терминалов, а
+                            также веб-версию и мобильное приложение.
+                        </p>
+
+                        <p>
+                            Cоздав кошелек Visa QIWI Wallet, вы сможете совершать любые платежи, осуществлять денежные
+                            переводы,
+                            оплачивать более 75000 товаров и услуг — прямо с экрана вашего компьютера, планшета или
+                            смартфона.
+                        </p>
+
+                        <ul class="black">
+                            <li>Сервисный сбор: 1,6%, минимум 50 руб.</li>
+                            <li>Зачисление: на следующий рабочий день</li>
+                            <li>Максимальная сумма платежа: 15 000 руб.</li>
+                        </ul>
+
+                        <p>
+                            Через платежные сервисы QIWI (КИВИ) можно просто и безопасно погасить задолженность по
+                            кредиту по
+                            карте
+                            или по кредиту наличными:
+                        </p>
+
+                        <div class="h2 h_blue">В любом QIWI Терминале</div>
+
+                        <a href="" class="aicon aicon-book">Инструкция</a> <br/>
+                        <a href="" class="aicon aicon-map-location">Карта терминалов</a>
+
+                        <div class="h2 h_blue">На сайте электронного кошелька Visa QIWI Wallet (VQW)</div>
+
+                        <a href="" class="aicon aicon-plus">Подробнее</a>
+
+                        <div class="h2 h_blue">С мобильного</div>
+
+                        <a href="" class="aicon aicon-download">Скачайте приложение VQW на m.qiwi.ru</a>
+
+                        <div class="sub">
+                            Служба поддержки: 8 (800) 333-00-59, +7 (495) 626-52-52 <br/>
+                            Сервисы предоставляет КИВИ Банк (АО), лицензия ЦБ России № 2241 от 12.04.2013.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row row-no-padding">
+            <div class="col-md-3">
+                <div class="footer__copyright">
+                    &copy; 2006-2015, ПАО КБ «Восточный»
+                </div>
+                <div class="footer__sub">
+                    Генеральная лицензия Банка России <br/>
+                    №1460 от 24.10.2014 г.
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-2">
+                <ul class="menu-bottom">
+                    <li><a href="">О банке</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li><a href="">Раскрытие информации о банке</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-md-offset-2 text-right">
+                <a href="http://web-alt.ru/" target="_blank" class="web-alternative">
+                    Сайт разработан <br/>
+                    WEB ALTERNATIVE
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/vendor/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+<script src="assets/vendor/unslider/src/unslider.min.js"></script>
+<script src="assets/js/all.min.js"></script>
 </body>
 </html>

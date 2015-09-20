@@ -1,0 +1,17 @@
+.row-no-padding {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.row-no-padding [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.main-header {
+  margin-bottom: 16px;
+}
+.main-header__logo {
+  width: 100%;
+}
+.main-header__logo img {
+  width: 100%;
+}
