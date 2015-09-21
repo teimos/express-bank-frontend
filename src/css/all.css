@@ -84,6 +84,9 @@ p {
 [class*=" col-"].active {
   z-index: 15;
 }
+.z-index {
+  z-index: 12 !important;
+}
 .main-header {
   margin-bottom: 16px;
 }
@@ -239,6 +242,10 @@ p {
   display: block;
   padding: 2px 15px;
   color: black;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 .cities__link:hover {
   color: white;
@@ -261,10 +268,9 @@ p {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-}
-.promo__card:hover {
-  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.85);
   z-index: 10;
+  overflow: hidden;
 }
 .promo__card__title {
   font-size: 28px;
@@ -339,11 +345,16 @@ p {
   line-height: 14px;
   padding: 23px 58px 24px 29px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 .promo__slider__slide_1__button:focus,
 .promo__slider__slide_1__button:hover {
   color: #ffffff;
   text-decoration: none;
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
 }
 .promo__slider__slide_1__title {
   color: #276bb1;
@@ -454,6 +465,7 @@ p {
   text-decoration: none;
   color: #ffffff;
   box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.33);
+  background: #3075bc;
 }
 .main-menu__link:hover .icon {
   color: #ffffff;
@@ -469,6 +481,7 @@ p {
   text-decoration: none;
   color: #ffffff;
   box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.4);
+  background: #4987c7;
 }
 .main-menu__link.active .main-menu__link__caption {
   height: 65px;
@@ -575,6 +588,9 @@ p {
   padding: 15px;
   border-bottom: 7px solid #4a4a4a;
   border-radius: 0 0 5px 5px;
+}
+.spoilers {
+  padding: 0;
 }
 .spoilers__item {
   list-style-type: none;

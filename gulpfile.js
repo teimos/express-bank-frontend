@@ -9,20 +9,23 @@ var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 
+//Css
+gulp.task('css', ['less'], function(){
+    return gulp.src('src/css/*.css')
+        .pipe(concat('all.css'))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(minifyCss({compatibility: 'ie8'}))
+        .pipe(gulp.dest('assets/css'));
+});
 
 // Compile Less
 gulp.task('less', function() {
-	gulp.src('src/less/*.less')
+	return gulp.src('src/less/*.less')
 		.pipe(less())
 		.pipe(gulp.dest('src/css'));
-	return gulp.src('src/css/*.css')
-			.pipe(concat('all.css'))
-			.pipe(autoprefixer({
-				browsers: ['last 2 versions'],
-				cascade: false
-			}))
-            .pipe(minifyCss({compatibility: 'ie8'}))
-			.pipe(gulp.dest('assets/css'));
 });
 
 // Concatenate & Minify JS
@@ -38,10 +41,10 @@ gulp.task('scripts', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
 	gulp.watch('src/js/*.js', ['scripts']);
-	gulp.watch('src/less/*.less', ['less']);
+	gulp.watch('src/less/*.less', ['css']);
 });
 
 // Default Task
-gulp.task('default', ['less', 'scripts']);
+gulp.task('default', ['css', 'scripts']);
 // Build All
 gulp.task('build', ['default']);
