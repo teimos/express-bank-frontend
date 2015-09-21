@@ -464,7 +464,7 @@ p {
 .main-menu__link:hover {
   text-decoration: none;
   color: #ffffff;
-  box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.33);
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.33);
   background: #3075bc;
 }
 .main-menu__link:hover .icon {
@@ -689,7 +689,7 @@ p {
 .payment-systems__items__item.active:before {
   background: #4987c7;
   height: 14px;
-  box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.41);
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
 }
 .payment-systems__items__item.active:after {
   content: '';
