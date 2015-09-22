@@ -139,6 +139,7 @@ p {
 
 	&__logo {
 		width: 100%;
+		max-width: 100%;
 		display: block;
 		padding-top: 31px;
 
@@ -322,8 +323,25 @@ p {
 
 //Promo
 
+.hidden-promo-margin {
+	height: 15px;
+}
+
+.hidden-promo {
+	height: 133px;
+	color: #ffffff;
+	font-size: 28px;
+	line-height: 32px;
+	padding: 21px 20px 0 18px;
+}
+
 .promo {
 	margin-bottom: 18px;
+
+	&__slider__container {
+		max-width: 760px;
+		margin: 0 auto;
+	}
 
 	&__card {
 		height: 330px;
@@ -968,4 +986,29 @@ p {
 		text-decoration: none;
 		color: black;
 	}
+}
+
+
+// Media Queries
+
+@media only screen and (max-width : 992px) {
+
+	.main-header__phone {
+		padding: 42px 0 0 72px !important;
+		background-position: 23px 47px;
+	}
+
+	.main-menu__link__caption {
+		display: none;
+	}
+
+	.main-menu__link.active .main-menu__link__shape:after,
+    .main-menu__column {
+	    height: 130px;
+    }
+
+    .cities {
+	    top: 103px;
+    }
+
 }

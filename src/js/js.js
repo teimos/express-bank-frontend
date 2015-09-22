@@ -50,4 +50,11 @@ $(function(){
         fluid: false // Support responsive design. May break non-responsive designs
     });
 
+    //Fit things
+    fit( $('.promo__slider__container'), $('.promo__slider__container').parent(), {
+        cover: false,
+        watch: false,
+        apply: true
+    });
+
 });
