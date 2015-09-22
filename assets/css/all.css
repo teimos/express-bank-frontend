@@ -683,6 +683,8 @@ p {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: auto;
 }
 .payment-systems__items__item:before {
   content: '';
