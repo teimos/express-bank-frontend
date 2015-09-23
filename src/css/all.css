@@ -92,6 +92,7 @@ p {
 }
 .main-header__logo {
   width: 100%;
+  max-width: 100%;
   display: block;
   padding-top: 31px;
 }
@@ -221,6 +222,7 @@ p {
   background: #f0f0f0;
   box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.29);
   position: relative;
+  padding-bottom: 40px;
 }
 .cities__wrapper:before {
   content: '';
@@ -236,7 +238,7 @@ p {
   border-right: 13px solid transparent;
 }
 .cities__wrapper__col {
-  padding: 20px 15px 40px 15px;
+  padding: 20px 15px 0 15px;
 }
 .cities__link {
   display: block;
@@ -257,8 +259,23 @@ p {
   text-decoration: none;
   background: #276bb1;
 }
+.hidden-promo-margin {
+  height: 15px;
+}
+.hidden-promo {
+  height: 133px;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 32px;
+  padding: 21px 20px 0 18px;
+}
 .promo {
   margin-bottom: 18px;
+}
+.promo__slider__container {
+  max-width: 760px;
+  width: 760px;
+  margin: 0 auto;
 }
 .promo__card {
   height: 330px;
@@ -603,6 +620,7 @@ p {
   transform: rotate(90deg);
 }
 .spoilers__item__title {
+  display: block;
   padding-left: 54px;
   color: #276bb1;
   font-size: 18px;
@@ -668,6 +686,8 @@ p {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: auto;
 }
 .payment-systems__items__item:before {
   content: '';
@@ -808,4 +828,64 @@ p {
 .web-alternative:focus {
   text-decoration: none;
   color: black;
+}
+@media only screen and (max-width: 768px) {
+  .cities {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .main-header__phone {
+    padding: 42px 0 0 72px !important;
+    background-position: 23px 47px;
+  }
+  .main-menu__link__caption {
+    display: none;
+  }
+  .main-menu__link .icon {
+    font-size: 27px;
+  }
+  .main-menu__link__shape:after {
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+  }
+  .main-menu__link .icon-pochta_rossii {
+    font-size: 24px;
+  }
+  .main-menu__column__pochta-rossii .main-menu__link__shape {
+    padding-top: 28px;
+  }
+  .main-menu__column__onlain-platej .main-menu__link__shape {
+    padding-top: 28px;
+  }
+  .main-menu__link .icon-drugie_sposobi {
+    font-size: 26px;
+  }
+  .main-menu__link .icon-onlain-platej {
+    font-size: 24px;
+  }
+  .main-menu__link.active .icon {
+    font-size: 45px;
+  }
+  .main-menu__link__shape,
+  .main-menu__link.active .main-menu__link__shape:after,
+  .main-menu__column {
+    height: 70px;
+  }
+  .main-menu__link.active .main-menu__link__shape {
+    padding-top: 14px;
+  }
+  .main-menu__link__shape:after {
+    top: 12px;
+  }
+  .main-menu__link__shape {
+    padding-top: 24px;
+  }
+  .cities {
+    top: 103px;
+  }
+  .payment-systems__items__item {
+    height: 124px;
+  }
 }
