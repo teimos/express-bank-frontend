@@ -57,6 +57,20 @@ $(function(){
         fluid: false // Support responsive design. May break non-responsive designs
     });
 
+    //Dropdowns
+    $('.select').selectize({
+        create: true,
+        sortField: 'text'
+    });
+
+    //Yandex Map
+    ymaps.ready(function(){
+        map = new ymaps.Map("yandex-map", {
+            center: [55.76, 37.64],
+            zoom: 10
+        });
+    });
+
 });
 
 function scaleSlider(){

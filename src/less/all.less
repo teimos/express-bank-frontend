@@ -103,9 +103,31 @@ p {
 	}
 }
 
+.top_z_index {
+	z-index: 50 !important;
+}
+
+.no-padding-h {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.no-padding-b {
+	padding-bottom: 0 !important;
+}
+
 .row-no-padding {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
+}
+
+.row-no-padding-inner {
+	margin-left: 15px !important;
+	margin-right: 15px !important;
+}
+
+.row-no-padding,
+.row-no-padding-inner {
 	[class*="col-"] {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
@@ -350,8 +372,8 @@ p {
 		color: #ffffff;
 		padding: 60px 20px 0 35px;
 		.transition();
-        box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.85);
-        z-index: 10;
+		box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.85);
+		z-index: 10;
 		overflow: hidden;
 
 		&:hover {
@@ -711,8 +733,171 @@ p {
 
 					border-bottom: 7px solid #4a4a4a;
 					border-radius: 0 0 5px 5px;
+
+					&.active {
+						display: block;
+					}
 				}
 			}
+		}
+	}
+}
+
+// Map
+
+.yandex-map {
+	width: 100%;
+	height: 462px;
+	margin-top: 10px;
+}
+
+.map {
+
+	&__items {
+		&__item {
+			padding: 25px 0;
+			.transition();
+
+			&:hover {
+				box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.52);
+			}
+
+			&__image-container {
+				text-align: center;
+
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+			}
+
+			&__text {
+				font-size: 14px;
+				font-weight: @light;
+				color: #252525;
+
+				&__title {
+					font-size: 18px;
+					color: #2d6fb3;
+					font-weight: @normal;
+				}
+
+				&__distance {
+					margin-bottom: 15px;
+				}
+
+				&__type {
+					font-weight: @normal;
+					text-transform: uppercase;
+				}
+
+				&__options {
+
+				}
+
+				&__additional {
+					padding-top: 15px;
+
+					&__item {
+						text-transform: uppercase;
+						margin-bottom: 5px;
+
+						b {
+							text-transform: none;
+							font-weight: @bold;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__sub {
+		background: #276bb1;
+		padding: 20px 0;
+		color: #d2e8ff;
+		font-size: 14px;
+		font-weight: @light;
+
+		&__title {
+			font-size: 20px;
+			color: #ffffff;
+			font-weight: @normal;
+		}
+
+		&__distance {
+			margin-bottom: 15px;
+		}
+
+		&__type {
+			font-weight: @normal;
+			text-transform: uppercase;
+		}
+
+		&__options {
+
+		}
+
+		&__additional {
+			padding-top: 28px;
+
+			&__item {
+				text-transform: uppercase;
+				margin-bottom: 5px;
+
+				b {
+					color: #ffffff;
+					text-transform: none;
+					font-weight: @bold;
+				}
+			}
+		}
+	}
+
+	&__search {
+		position: relative;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 38px;
+			height: 38px;
+			content: '';
+			display: block;
+			background: transparent url('../img/icon-find.png') 50% 50% no-repeat;
+			opacity: 0.3;
+		}
+
+		&:after {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 1px;
+			height: 24px;
+			margin-top: -12px;
+			background: #bfbfbf;
+			content: '';
+			display: block;
+		}
+
+		&__input {
+			width: 100%;
+			border: 1px solid #bfbfbf;
+			border-right: none;
+			padding: 8px 10px 8px 38px;
+			text-transform: uppercase;
+
+		}
+
+		&__button {
+			width: 100%;
+			border: 1px solid #bfbfbf;
+			border-left: none;
+			padding: 8px 0;
+			text-transform: uppercase;
+			text-align: center;
+			background: none;
 		}
 	}
 }
@@ -815,8 +1000,8 @@ p {
 				left: 50%;
 				margin-right: -50%;
 				transform: translate(-50%, -50%);
-				max-width:100%;
-				height:auto;
+				max-width: 100%;
+				height: auto;
 			}
 
 			&:before {
@@ -993,9 +1178,8 @@ p {
 	}
 }
 
-
 // Media Queries
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 768px) {
 
 	.cities {
 		width: 100%;
@@ -1003,7 +1187,7 @@ p {
 
 }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
 
 	.main-header__phone {
 		padding: 42px 0 0 72px !important;
@@ -1050,9 +1234,9 @@ p {
 
 	.main-menu__link__shape,
 	.main-menu__link.active .main-menu__link__shape:after,
-    .main-menu__column {
-	    height: 70px;
-    }
+	.main-menu__column {
+		height: 70px;
+	}
 
 	.main-menu__link.active .main-menu__link__shape {
 		padding-top: 14px;
@@ -1066,9 +1250,9 @@ p {
 		padding-top: 24px;
 	}
 
-    .cities {
-	    top: 103px;
-    }
+	.cities {
+		top: 103px;
+	}
 
 	.payment-systems__items__item {
 		height: 124px;

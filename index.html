@@ -208,14 +208,14 @@
                     <div class="main-menu__link__caption">Как оплачивать кредит?</div>
                 </a>
             </div>
-            <div class="main-menu__column main-menu__column__naiti-tochku-oplati col-xs-2">
-                <a class="main-menu__link" href="#tab2">
+            <div class="main-menu__column main-menu__column__naiti-tochku-oplati col-xs-2 active">
+                <a class="main-menu__link active" href="#tab2">
                     <div class="main-menu__link__shape"><i class="icon icon-naiti_tochku_oplati"></i></div>
                     <div class="main-menu__link__caption">Найти точку оплаты</div>
                 </a>
             </div>
-            <div class="main-menu__column main-menu__column__onlain-platej col-xs-2 active">
-                <a class="main-menu__link active" href="#tab3">
+            <div class="main-menu__column main-menu__column__onlain-platej col-xs-2">
+                <a class="main-menu__link" href="#tab3">
                     <div class="main-menu__link__shape"><i class="icon icon-onlain-platej"></i></div>
                     <div class="main-menu__link__caption">Онлайн платеж с карты</div>
                 </a>
@@ -243,17 +243,148 @@
 </div>
 
 <div class="tabs container">
-    <div id="tab3" class="tabs__tab active">
+    <div id="tab2" class="tabs__tab active">
         <div class="tabs__tab__accordeon">
-            <div id="tab1-item1" class="tabs__tab__accordeon__item">
-                <a href="#tab1-item1" class="tabs__tab__accordeon__item__title">Инструкция по оплате</a>
+            <div id="tab2-item1" class="tabs__tab__accordeon__item active">
+                <a href="#tab2-item1" class="tabs__tab__accordeon__item__title">На карте</a>
+
+                <div class="tabs__tab__accordeon__item__body no-padding-h no-padding-b active">
+                    <div class="map">
+                        <div class="row row-no-padding-inner">
+                            <div class="top_z_index col-xs-4">
+                                <select class="select map__type" name="type">
+                                    <option value="0">Отображать все пункты</option>
+                                    <option value="1">Быстро</option>
+                                    <option value="2">Выгодно</option>
+                                    <option value="3">Удобно</option>
+                                    <option value="4">В любое время</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-6 col-xs-offset-1">
+                                <div class="map__search">
+                                    <input class="map__search__input" type="text" placeholder="Поиск по адресу">
+                                </div>
+                            </div>
+                            <div class="col-xs-1">
+                                <button class="map__search__button">Найти</button>
+                            </div>
+                        </div>
+                        <div class="row row-no-padding">
+                            <div id="yandex-map" class="col-xs-12 yandex-map">
+
+                            </div>
+                            <div class="map__sub col-xs-12">
+                                <div class="col-xs-1 col-xs-offset-1">
+                                    <img src="assets/img/map/sample.png" alt=""/>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="map__sub__title">г. Хабаровск, ул. Большая, д. 87, корп. Д</div>
+                                    <div class="map__sub__distance">На расстоянии 120 м от вас</div>
+                                    <div class="map__sub__type">Банкомат</div>
+                                    <div class="map__sub__options">
+                                        Прием наличных, безналичные платежи
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-xs-offset-1">
+                                    <div class="map__sub__additional">
+                                        <div class="map__sub__additional__item">Режим работы: <b>круглосуточно</b></div>
+                                        <div class="map__sub__additional__item">Срок зачисления: <b>от 5 до 30 минут</b></div>
+                                        <div class="map__sub__additional__item">Комиссия за погашение: <b>5%</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map__items">
+                                <div class="map__items__item col-xs-6">
+                                    <div class="map__items__item__image-container col-xs-2">
+                                        <img src="assets/img/map/sample.png" alt=""/>
+                                    </div>
+                                    <div class="map__items__item__text col-xs-10">
+                                        <div class="map__items__item__text__title">г. Хабаровск, ул. Большая, д. 87, корп. Д</div>
+                                        <div class="map__items__item__text__distance">На расстоянии 120 м от вас</div>
+                                        <div class="map__items__item__text__type">Банкомат</div>
+                                        <div class="map__items__item__text__options">
+                                            Прием наличных, безналичные платежи
+                                        </div>
+                                        <div class="map__items__item__text__additional">
+                                            <div class="map__items__item__text__additional__item">Режим работы: <b>круглосуточно</b></div>
+                                            <div class="map__items__item__text__additional__item">Срок зачисления: <b>от 5 до 30 минут</b></div>
+                                            <div class="map__items__item__text__additional__item">Комиссия за погашение: <b>5%</b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="map__items__item col-xs-6">
+                                    <div class="map__items__item__image-container col-xs-2">
+                                        <img src="assets/img/map/sample.png" alt=""/>
+                                    </div>
+                                    <div class="map__items__item__text col-xs-10">
+                                        <div class="map__items__item__text__title">г. Хабаровск, ул. Большая, д. 87, корп. Д</div>
+                                        <div class="map__items__item__text__distance">На расстоянии 120 м от вас</div>
+                                        <div class="map__items__item__text__type">Банкомат</div>
+                                        <div class="map__items__item__text__options">
+                                            Прием наличных, безналичные платежи
+                                        </div>
+                                        <div class="map__items__item__text__additional">
+                                            <div class="map__items__item__text__additional__item">Режим работы: <b>круглосуточно</b></div>
+                                            <div class="map__items__item__text__additional__item">Срок зачисления: <b>от 5 до 30 минут</b></div>
+                                            <div class="map__items__item__text__additional__item">Комиссия за погашение: <b>5%</b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="map__items__item col-xs-6">
+                                    <div class="map__items__item__image-container col-xs-2">
+                                        <img src="assets/img/map/sample.png" alt=""/>
+                                    </div>
+                                    <div class="map__items__item__text col-xs-10">
+                                        <div class="map__items__item__text__title">г. Хабаровск, ул. Большая, д. 87, корп. Д</div>
+                                        <div class="map__items__item__text__distance">На расстоянии 120 м от вас</div>
+                                        <div class="map__items__item__text__type">Банкомат</div>
+                                        <div class="map__items__item__text__options">
+                                            Прием наличных, безналичные платежи
+                                        </div>
+                                        <div class="map__items__item__text__additional">
+                                            <div class="map__items__item__text__additional__item">Режим работы: <b>круглосуточно</b></div>
+                                            <div class="map__items__item__text__additional__item">Срок зачисления: <b>от 5 до 30 минут</b></div>
+                                            <div class="map__items__item__text__additional__item">Комиссия за погашение: <b>5%</b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="map__items__item col-xs-6">
+                                    <div class="map__items__item__image-container col-xs-2">
+                                        <img src="assets/img/map/sample.png" alt=""/>
+                                    </div>
+                                    <div class="map__items__item__text col-xs-10">
+                                        <div class="map__items__item__text__title">г. Хабаровск, ул. Большая, д. 87, корп. Д</div>
+                                        <div class="map__items__item__text__distance">На расстоянии 120 м от вас</div>
+                                        <div class="map__items__item__text__type">Банкомат</div>
+                                        <div class="map__items__item__text__options">
+                                            Прием наличных, безналичные платежи
+                                        </div>
+                                        <div class="map__items__item__text__additional">
+                                            <div class="map__items__item__text__additional__item">Режим работы: <b>круглосуточно</b></div>
+                                            <div class="map__items__item__text__additional__item">Срок зачисления: <b>от 5 до 30 минут</b></div>
+                                            <div class="map__items__item__text__additional__item">Комиссия за погашение: <b>5%</b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab3" class="tabs__tab">
+        <div class="tabs__tab__accordeon">
+            <div id="tab3-item1" class="tabs__tab__accordeon__item">
+                <a href="#tab3-item1" class="tabs__tab__accordeon__item__title">Инструкция по оплате</a>
 
                 <div class="tabs__tab__accordeon__item__body">
                     TODO: Разместить инструкцию по оплате
                 </div>
             </div>
-            <div id="tab1-item2" class="tabs__tab__accordeon__item">
-                <a href="#tab1-item2" class="tabs__tab__accordeon__item__title">FAQ / Помощь</a>
+            <div id="tab3-item2" class="tabs__tab__accordeon__item">
+                <a href="#tab3-item2" class="tabs__tab__accordeon__item__title">FAQ / Помощь</a>
 
                 <div class="tabs__tab__accordeon__item__body">
                     <ul class="spoilers">
@@ -427,11 +558,15 @@
     </div>
 </footer>
 
+<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 
 <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
 <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="assets/vendor/jquery.event.swipe/js/jquery.event.swipe.js"></script>
 <script src="assets/vendor/unslider/src/unslider.min.js"></script>
+<script src="assets/vendor/sifter/sifter.min.js"></script>
+<script src="assets/vendor/microplugin/src/microplugin.js"></script>
+<script src="assets/vendor/selectize/dist/js/selectize.min.js"></script>
 <script src="assets/js/all.min.js"></script>
 </body>
 </html>
