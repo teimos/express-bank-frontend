@@ -72,6 +72,24 @@ $(function(){
         });
     });
 
+    //Forms
+    $('.form__placeholder').click(function(){
+        $(this).addClass('focus');
+        $(this).parent().find('input,textarea').focus();
+    });
+    $('.form input[type="text"], .form textarea').focus(function(){
+        $(this).parent().find('.form__placeholder').addClass('focus');
+    });
+    $('.form input[type="text"], .form textarea').blur(function(){
+        if ($(this).val() == '') {
+            $(this).parent().find('.form__placeholder').removeClass('focus');
+        }
+    });
+    $('.form input[type="text"], .form textarea').keyup(function(){
+       if ($(this).val() != '') $(this).parent().addClass('ok');
+        else $(this).parent().removeClass('ok');
+    });
+
 });
 
 function scaleSlider(){

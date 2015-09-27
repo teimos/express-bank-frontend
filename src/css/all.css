@@ -78,8 +78,15 @@ p {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+.no-padding-v {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 .no-padding-b {
   padding-bottom: 0 !important;
+}
+.no-padding-t {
+  padding-top: 0 !important;
 }
 .row-no-padding {
   margin-left: 0 !important;
@@ -112,6 +119,14 @@ p {
 .blue-arrows li {
   padding: 5px 0 25px 55px;
   background: transparent url('../img/icon-blue-arrow.png') 6px 0 no-repeat;
+}
+.white-arrows {
+  list-style-type: none;
+}
+.white-arrows li {
+  padding: 5px 0 25px 55px;
+  background: transparent url('../img/icon-white-arrow.png') 6px 0 no-repeat;
+  color: white;
 }
 .main-header {
   margin-bottom: 16px;
@@ -982,6 +997,94 @@ p {
 .web-alternative:focus {
   text-decoration: none;
   color: black;
+}
+.form {
+  padding: 30px 0;
+  background: #ffffff;
+}
+.form .subtitle {
+  padding: 22px 0;
+  font-size: 24px;
+  color: #4987c7;
+}
+.form__button {
+  background: #276bb1;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 37px;
+}
+.form__input-container {
+  position: relative;
+  margin-bottom: 22px;
+}
+.form__input-container.required:before {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 11px solid #e74646;
+  border-bottom: 11px solid transparent;
+  border-right: 6px solid #e74646;
+  border-left: 6px solid transparent;
+}
+.form__input-container.required.ok input {
+  border-color: #3075bc;
+}
+.form__input-container.required.ok:before {
+  border-top: 11px solid #3075bc;
+  border-right: 6px solid #3075bc;
+}
+.form__input-container textarea,
+.form__input-container input {
+  width: 100%;
+  height: 36px;
+  border: 1px solid #bfbfbf;
+  padding: 0 10px;
+  font-size: 13px;
+}
+.form__input-container textarea {
+  resize: none;
+  height: 73px;
+  padding-top: 10px;
+}
+.form__placeholder {
+  display: block;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 13px;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  top: 0;
+  left: 15px;
+  padding: 0 10px;
+  color: #919191;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.form__placeholder.focus {
+  font-size: 8px;
+  line-height: 8px;
+  height: 8px;
+  top: 3px;
+}
+.russian-post {
+  font-size: 18px;
+  padding: 66px 36px 176px 0;
+  background: #276bb1 url('../img/russian-post.png') left 50% bottom 100px no-repeat;
+  height: 587px;
 }
 @media only screen and (max-width: 1200px) {
   .main-menu__link__shape {
