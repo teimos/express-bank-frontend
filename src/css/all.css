@@ -105,6 +105,14 @@ p {
 .z-index {
   z-index: 12 !important;
 }
+.blue-arrows {
+  padding: 30px 340px 45px 0;
+  list-style-type: none;
+}
+.blue-arrows li {
+  padding: 5px 0 25px 55px;
+  background: transparent url('../img/icon-blue-arrow.png') 6px 0 no-repeat;
+}
 .main-header {
   margin-bottom: 16px;
 }
@@ -810,6 +818,9 @@ p {
   line-height: 17px;
   padding-top: 6px;
 }
+.payment-guide {
+  background: transparent url('../img/payment-guide.png') 100% 100% no-repeat;
+}
 .payment-systems {
   margin-top: 8px;
 }
@@ -972,9 +983,9 @@ p {
   text-decoration: none;
   color: black;
 }
-@media only screen and (max-width: 768px) {
-  .cities {
-    width: 100%;
+@media only screen and (max-width: 1200px) {
+  .main-menu__link__shape {
+    height: 120px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -997,10 +1008,10 @@ p {
     font-size: 24px;
   }
   .main-menu__column__pochta-rossii .main-menu__link__shape {
-    padding-top: 28px;
+    padding-top: 25px;
   }
   .main-menu__column__onlain-platej .main-menu__link__shape {
-    padding-top: 28px;
+    padding-top: 25px;
   }
   .main-menu__link .icon-drugie_sposobi {
     font-size: 26px;
@@ -1020,15 +1031,20 @@ p {
     padding-top: 14px;
   }
   .main-menu__link__shape:after {
-    top: 12px;
+    top: 10px;
   }
   .main-menu__link__shape {
-    padding-top: 24px;
+    padding-top: 22px;
   }
   .cities {
     top: 103px;
   }
   .payment-systems__items__item {
     height: 124px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cities {
+    width: 100%;
   }
 }

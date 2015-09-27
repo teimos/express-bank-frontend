@@ -158,6 +158,17 @@ p {
 	z-index: 12 !important;
 }
 
+// Blue Arrows UL
+.blue-arrows {
+	padding: 30px 340px 45px 0;
+	list-style-type: none;
+
+	li {
+		padding: 5px 0 25px 55px;
+		background: transparent url('../img/icon-blue-arrow.png') 6px 0 no-repeat;
+	}
+}
+
 // Header
 
 .main-header {
@@ -980,6 +991,12 @@ p {
 	}
 }
 
+// Payment guide
+
+.payment-guide {
+	background: transparent url('../img/payment-guide.png') 100% 100% no-repeat;
+}
+
 //Payment Systems
 
 .payment-systems {
@@ -1183,10 +1200,11 @@ p {
 }
 
 // Media Queries
-@media only screen and (max-width: 768px) {
 
-	.cities {
-		width: 100%;
+@media only screen and (max-width: 1200px) {
+
+	.main-menu__link__shape {
+		height: 120px;
 	}
 
 }
@@ -1217,11 +1235,11 @@ p {
 	}
 
 	.main-menu__column__pochta-rossii .main-menu__link__shape {
-		padding-top: 28px;
+		padding-top: 25px;
 	}
 
 	.main-menu__column__onlain-platej .main-menu__link__shape {
-		padding-top: 28px;
+		padding-top: 25px;
 	}
 
 	.main-menu__link .icon-drugie_sposobi {
@@ -1247,11 +1265,11 @@ p {
 	}
 
 	.main-menu__link__shape:after {
-		top: 12px;
+		top: 10px;
 	}
 
 	.main-menu__link__shape {
-		padding-top: 24px;
+		padding-top: 22px;
 	}
 
 	.cities {
@@ -1261,4 +1279,13 @@ p {
 	.payment-systems__items__item {
 		height: 124px;
 	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	.cities {
+		width: 100%;
+	}
+
 }
