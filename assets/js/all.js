@@ -65,12 +65,14 @@ $(function(){
     });
 
     //Yandex Map
-    ymaps.ready(function(){
-        map = new ymaps.Map("yandex-map", {
-            center: [55.76, 37.64],
-            zoom: 10
+    if (typeof ymaps != 'undefined' && $('#yandex-map').size() > 0) {
+        ymaps.ready(function(){
+            map = new ymaps.Map("yandex-map", {
+                center: [55.76, 37.64],
+                zoom: 10
+            });
         });
-    });
+    }
 
     //Forms
     $('.form__placeholder').click(function(){

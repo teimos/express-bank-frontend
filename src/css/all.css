@@ -112,6 +112,9 @@ p {
 .z-index {
   z-index: 12 !important;
 }
+.container-small {
+  max-width: 760px;
+}
 .blue-arrows {
   padding: 30px 340px 45px 0;
   list-style-type: none;
@@ -135,6 +138,16 @@ p {
   padding: 5px 0 25px 55px;
   background: transparent url('../img/icon-white-arrow.png') 6px 0 no-repeat;
   color: white;
+}
+.service-unavailable {
+  border: 1px solid #bababa;
+  font-size: 36px;
+  color: #121212;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 5px;
+  padding: 120px 0;
+  text-transform: uppercase;
 }
 .main-header {
   margin-bottom: 16px;
