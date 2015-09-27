@@ -90,6 +90,12 @@ $(function(){
         else $(this).parent().removeClass('ok');
     });
 
+    $('.payment__row_radio label').click(function(){
+        $(this).parent().find('label').removeClass('checked');
+        $(this).addClass('checked');
+        $(this).parent().parent().find('.payment__input_num').attr('placeholder', $('input', this).data('placeholder'));
+    });
+
 });
 
 function scaleSlider(){

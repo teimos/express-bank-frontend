@@ -1314,6 +1314,115 @@ p {
 	}
 }
 
+.payment {
+	padding-top: 25px;
+
+	&__input {
+		height: 36px;
+		border: 1px solid #bfbfbf;
+		background: #ffffff;
+		padding: 0 15px;
+		width: 100%;
+		max-width: 164px;
+
+		&_num {
+			max-width: 366px;
+		}
+	}
+	
+	&__row {
+		margin-bottom: 12px;
+		position: relative;
+
+		&_radio {
+			padding-bottom: 10px;
+			
+			input {
+				display: none;
+			}
+
+			label {
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 15px 0;
+				text-align: center;
+				border: 1px solid #b6b6b6;
+				border-radius: 6px;
+				cursor: pointer;
+				margin-right: 15px;
+				width: 150px;
+
+				&.checked {
+					color: white;
+					border-color: #276bb1;
+					background: #276bb1;
+				}
+			}
+		}
+	}
+
+	&__button {
+		width: 100%;
+		max-width: 164px;
+		height: 36px;
+		border: none;
+		background: #276bb1;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	.rouble-suffix {
+		display: inline-block;
+
+		&:after {
+			content: 'РУБ';
+			display: block;
+			position: absolute;
+			font-size: 18px;
+			font-weight: bold;
+			right: -45px;
+			top: 5px;
+		}
+	}
+}
+
+// Instruction title
+
+.instruction-title {
+	font-size: 24px;
+	color: #276bb1;
+	padding: 30px 55px 0 55px;
+}
+
+// Payment by phone
+
+.payment-phone {
+	background: transparent url('../img/payment-phone.png') 100% 100% no-repeat;
+}
+
+// Online payment
+
+.online-payment {
+	background: transparent url('../img/online-payment.png') 100% 100% no-repeat;
+}
+
+// Requisites
+
+.requisites {
+	background: transparent url('../img/requisites.png') 100% 100% no-repeat;
+}
+
+// Mobile & Internet
+
+.mobile-and-internet {
+	background: transparent url('../img/mobile-and-internet.png') 100% 100% no-repeat;
+}
+
+// Other banks
+.other-banks {
+	background: transparent url('../img/other-banks.png') 100% 100% no-repeat;
+}
+
 // Russian Post block
 
 .russian-post {

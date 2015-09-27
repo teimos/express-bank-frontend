@@ -1080,6 +1080,87 @@ p {
   height: 8px;
   top: 3px;
 }
+.payment {
+  padding-top: 25px;
+}
+.payment__input {
+  height: 36px;
+  border: 1px solid #bfbfbf;
+  background: #ffffff;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 164px;
+}
+.payment__input_num {
+  max-width: 366px;
+}
+.payment__row {
+  margin-bottom: 12px;
+  position: relative;
+}
+.payment__row_radio {
+  padding-bottom: 10px;
+}
+.payment__row_radio input {
+  display: none;
+}
+.payment__row_radio label {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 15px 0;
+  text-align: center;
+  border: 1px solid #b6b6b6;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 15px;
+  width: 150px;
+}
+.payment__row_radio label.checked {
+  color: white;
+  border-color: #276bb1;
+  background: #276bb1;
+}
+.payment__button {
+  width: 100%;
+  max-width: 164px;
+  height: 36px;
+  border: none;
+  background: #276bb1;
+  text-align: center;
+  color: #ffffff;
+}
+.payment .rouble-suffix {
+  display: inline-block;
+}
+.payment .rouble-suffix:after {
+  content: 'РУБ';
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  right: -45px;
+  top: 5px;
+}
+.instruction-title {
+  font-size: 24px;
+  color: #276bb1;
+  padding: 30px 55px 0 55px;
+}
+.payment-phone {
+  background: transparent url('../img/payment-phone.png') 100% 100% no-repeat;
+}
+.online-payment {
+  background: transparent url('../img/online-payment.png') 100% 100% no-repeat;
+}
+.requisites {
+  background: transparent url('../img/requisites.png') 100% 100% no-repeat;
+}
+.mobile-and-internet {
+  background: transparent url('../img/mobile-and-internet.png') 100% 100% no-repeat;
+}
+.other-banks {
+  background: transparent url('../img/other-banks.png') 100% 100% no-repeat;
+}
 .russian-post {
   font-size: 18px;
   padding: 66px 36px 176px 0;

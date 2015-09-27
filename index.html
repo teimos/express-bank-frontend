@@ -443,9 +443,79 @@
     </div>
 </div>
 
-<div id="tab3" class="tabs__tab"></div>
+<div id="tab3" class="tabs__tab">
+    <div class="tabs__tab__accordeon">
+        <div id="tab3-item1" class="tabs__tab__accordeon__item active">
+            <a href="#tab6-item1" class="tabs__tab__accordeon__item__title">Онлайн платеж</a>
 
-<div id="tab4" class="tabs__tab"></div>
+            <div class="tabs__tab__accordeon__item__body active online-payment">
+                <div class="instruction-title">Описание метода</div>
+                <ul class="blue-arrows">
+                    <li>
+                        В открывшемся окне выберите счет списания, и введите сумму платежа. Затем проверьте правильность
+                        введенной информации и нажмите «Подтвердить».
+
+                        <form class="payment" action="">
+                            <div class="payment__row payment__row_radio">
+                                <label class="checked"><input type="radio" name="type" value="1" data-placeholder="Введите номер карты" checked /> На карту</label>
+                                <label><input type="radio" name="type" value="2" data-placeholder="Введите номер счета" /> На счет</label>
+                                <label><input type="radio" name="type" value="3" data-placeholder="Введите номер телефона" /> На телефон</label>
+                            </div>
+                            <div class="payment__row">
+                                <input class="payment__input payment__input_num" type="text" name="num" placeholder="Введите номер карты" value=""/>
+                            </div>
+                            <div class="payment__row rouble-suffix">
+                                <input class="payment__input" type="text" name="summ" placeholder="Сумма оплаты" value=""/>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="payment__row">
+                                <input class="payment__button" type="submit" name="submit" value="Оплатить"/>
+                            </div>
+                        </form>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="tab4" class="tabs__tab">
+    <div class="tabs__tab__accordeon">
+        <div id="tab4-item1" class="tabs__tab__accordeon__item active">
+            <a href="#tab4-item1" class="tabs__tab__accordeon__item__title">Оплата с телефона</a>
+
+            <div class="tabs__tab__accordeon__item__body payment-phone active">
+                <div class="instruction-title">Описание метода</div>
+                <ul class="blue-arrows">
+                    <li>
+                        В открывшемся окне выберите счет списания, и введите сумму платежа. Затем проверьте правильность
+                        введенной информации и нажмите «Подтвердить».
+
+                        <form class="payment" action="">
+                            <div class="payment__row payment__row_radio">
+                                <label class="checked"><input type="radio" name="type" value="1" data-placeholder="Введите номер карты" checked /> На карту</label>
+                                <label><input type="radio" name="type" value="2" data-placeholder="Введите номер счета" /> На счет</label>
+                                <label><input type="radio" name="type" value="3" data-placeholder="Введите номер договора" /> На договор</label>
+                            </div>
+                            <div class="payment__row">
+                                <input class="payment__input payment__input_num" type="text" name="num" placeholder="Введите номер карты" value=""/>
+                            </div>
+                            <div class="payment__row rouble-suffix">
+                                <input class="payment__input" type="text" name="summ" placeholder="Сумма оплаты" value=""/>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="payment__row">
+                                <input class="payment__button" type="submit" name="submit" value="Оплатить"/>
+                            </div>
+                        </form>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="tab5" class="tabs__tab">
     <div class="tabs__tab__accordeon">
@@ -539,7 +609,8 @@
                                     Сформируйте заявку и распечатайте ее.
                                 </li>
                                 <li>
-                                    Для уточнения подробностей обратитесь в банк, на Почту России или позвоните по горячей
+                                    Для уточнения подробностей обратитесь в банк, на Почту России или позвоните по
+                                    горячей
                                     линии.
                                 </li>
                             </ul>
@@ -551,7 +622,87 @@
     </div>
 </div>
 
-<div id="tab6" class="tabs__tab"></div>
+<div id="tab6" class="tabs__tab">
+    <div class="tabs__tab__accordeon">
+        <div id="tab6-item1" class="tabs__tab__accordeon__item">
+            <a href="#tab6-item1" class="tabs__tab__accordeon__item__title">Через отделения сторонних банков</a>
+
+            <div class="tabs__tab__accordeon__item__body other-banks">
+                <div class="instruction-title">Инструкция по оплате</div>
+                <ul class="blue-arrows">
+                    <li>
+                        В открывшемся окне выберите счет списания, и введите сумму платежа. Затем проверьте правильность
+                        введенной информации и нажмите «Подтвердить».
+                    </li>
+                    <li>
+                        Введите пароль, полученный в SMS-сообщении для подтверждения операции.
+                    </li>
+                    <li>
+                        Платеж произведен успешно. Теперь вы можете сохранить его как шаблон и распечатать чек.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="tab6-item2" class="tabs__tab__accordeon__item">
+            <a href="#tab6-item2" class="tabs__tab__accordeon__item__title">Через интернет и мобильные приложения
+                сторонних банков</a>
+
+            <div class="tabs__tab__accordeon__item__body mobile-and-internet">
+                <div class="instruction-title">Инструкция по оплате</div>
+                <ul class="blue-arrows">
+                    <li>
+                        В открывшемся окне выберите счет списания, и введите сумму платежа. Затем проверьте правильность
+                        введенной информации и нажмите «Подтвердить».
+                    </li>
+                    <li>
+                        Введите пароль, полученный в SMS-сообщении для подтверждения операции.
+                    </li>
+                    <li>
+                        Платеж произведен успешно. Теперь вы можете сохранить его как шаблон и распечатать чек.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="tab6-item3" class="tabs__tab__accordeon__item">
+            <a href="#tab6-item3" class="tabs__tab__accordeon__item__title">С зарплатного счета / через бухгалтерию</a>
+
+            <div class="tabs__tab__accordeon__item__body ">
+                <div class="instruction-title">Инструкция по оплате</div>
+                <ul class="blue-arrows">
+                    <li>
+                        В открывшемся окне выберите счет списания, и введите сумму платежа. Затем проверьте правильность
+                        введенной информации и нажмите «Подтвердить».
+                    </li>
+                    <li>
+                        Введите пароль, полученный в SMS-сообщении для подтверждения операции.
+                    </li>
+                    <li>
+                        Платеж произведен успешно. Теперь вы можете сохранить его как шаблон и распечатать чек.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="tab6-item4" class="tabs__tab__accordeon__item">
+            <a href="#tab6-item4" class="tabs__tab__accordeon__item__title">Реквизиты</a>
+
+            <div class="tabs__tab__accordeon__item__body requisites">
+                <div class="instruction-title">Инструкция по оплате</div>
+                <ul class="blue-arrows">
+                    <li>
+                        В открывшемся окне выберите счет списания, и введите сумму платежа. Затем проверьте правильность
+                        введенной информации и нажмите «Подтвердить».
+                    </li>
+                    <li>
+                        Введите пароль, полученный в SMS-сообщении для подтверждения операции.
+                    </li>
+                    <li>
+                        Платеж произведен успешно. Теперь вы можете сохранить его как шаблон и распечатать чек.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 </div>
 
