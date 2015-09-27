@@ -120,6 +120,14 @@ p {
   padding: 5px 0 25px 55px;
   background: transparent url('../img/icon-blue-arrow.png') 6px 0 no-repeat;
 }
+.blue-arrows li.download {
+  background: transparent url('../img/icon-download-small.png') 15px 10px no-repeat;
+  padding-bottom: 5px;
+}
+.blue-arrows li.download a {
+  color: #161616;
+  text-decoration: underline;
+}
 .white-arrows {
   list-style-type: none;
 }
@@ -1145,6 +1153,9 @@ p {
   font-size: 24px;
   color: #276bb1;
   padding: 30px 55px 0 55px;
+}
+.bookkeeping {
+  background: transparent url('../img/bookkeeping.png') 100% 100% no-repeat;
 }
 .payment-phone {
   background: transparent url('../img/payment-phone.png') 100% 100% no-repeat;
