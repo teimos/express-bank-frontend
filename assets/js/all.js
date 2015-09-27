@@ -59,8 +59,9 @@ $(function(){
 
     //Dropdowns
     $('.select').selectize({
-        create: true,
-        sortField: 'text'
+        create: false,
+        readOnly: true,
+        onDelete: function() { return false }
     });
 
     //Yandex Map
