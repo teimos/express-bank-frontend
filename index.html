@@ -17,6 +17,19 @@
 </head>
 <body>
 
+<div id="overlay"></div>
+
+<div id="errorModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body modal-body_error modal-body_red">
+                ОШИБКА! <br/>
+                Оплата не произведена
+            </div>
+        </div>
+    </div>
+</div>
+
 <header class="main-header container">
     <div class="row row-no-padding">
         <div class="col-xs-4 col-md-3">
@@ -202,14 +215,14 @@
 <div class="main-menu">
     <div class="container">
         <div class="row row-no-padding">
-            <div class="main-menu__column main-menu__column__kak-oplachivat col-xs-2">
-                <a class="main-menu__link" href="#tab1">
+            <div class="main-menu__column main-menu__column__kak-oplachivat col-xs-2 active">
+                <a class="main-menu__link active" href="#tab1">
                     <div class="main-menu__link__shape"><i class="icon icon-kak_oplachivat"></i></div>
                     <div class="main-menu__link__caption">Как оплачивать кредит?</div>
                 </a>
             </div>
-            <div class="main-menu__column main-menu__column__naiti-tochku-oplati col-xs-2 active">
-                <a class="main-menu__link active" href="#tab2">
+            <div class="main-menu__column main-menu__column__naiti-tochku-oplati col-xs-2">
+                <a class="main-menu__link" href="#tab2">
                     <div class="main-menu__link__shape"><i class="icon icon-naiti_tochku_oplati"></i></div>
                     <div class="main-menu__link__caption">Найти точку оплаты</div>
                 </a>
@@ -244,12 +257,12 @@
 
 <div class="tabs container">
 
-<div id="tab1" class="tabs__tab">
+<div id="tab1" class="tabs__tab active">
     <div class="tabs__tab__accordeon">
-        <div id="tab1-item1" class="tabs__tab__accordeon__item">
+        <div id="tab1-item1" class="tabs__tab__accordeon__item active">
             <a href="#tab1-item1" class="tabs__tab__accordeon__item__title">Инструкция по оплате</a>
 
-            <div class="tabs__tab__accordeon__item__body payment-guide">
+            <div class="tabs__tab__accordeon__item__body payment-guide hidden-bg active">
                 <ul class="blue-arrows">
                     <li>
                         Выполните вход в «Восточный Экспресс Банк». Выберите сотового оператора на боковой панели
@@ -337,7 +350,7 @@
 
 </div>
 
-<div id="tab2" class="tabs__tab active">
+<div id="tab2" class="tabs__tab">
     <div class="tabs__tab__accordeon">
         <div id="tab2-item1" class="tabs__tab__accordeon__item active">
             <a href="#tab2-item1" class="tabs__tab__accordeon__item__title">На карте</a>
@@ -356,7 +369,10 @@
                         </div>
                         <div class="col-xs-10 col-sm-5 col-md-6 col-sm-offset-1">
                             <div class="map__search">
-                                <input class="map__search__input" type="text" placeholder="Поиск по адресу">
+                                <input class="map__search__input" type="text" placeholder="Поиск по адресу" />
+                                <div class="map__search__error opened">
+                                    К сожалению, такой адрес нам неизвестен
+                                </div>
                             </div>
                         </div>
                         <div class="col-xs-2 col-sm-1">
@@ -448,7 +464,7 @@
         <div id="tab3-item1" class="tabs__tab__accordeon__item active">
             <a href="#tab6-item1" class="tabs__tab__accordeon__item__title">Онлайн платеж</a>
 
-            <div class="tabs__tab__accordeon__item__body active online-payment">
+            <div class="tabs__tab__accordeon__item__body online-payment hidden-bg active">
                 <div class="instruction-title">Описание метода</div>
                 <ul class="blue-arrows">
                     <li>
@@ -457,15 +473,17 @@
 
                         <form class="payment" action="">
                             <div class="payment__row payment__row_radio">
-                                <label class="checked"><input type="radio" name="type" value="1" data-placeholder="Введите номер карты" checked /> На карту</label>
-                                <label><input type="radio" name="type" value="2" data-placeholder="Введите номер счета" /> На счет</label>
-                                <label><input type="radio" name="type" value="3" data-placeholder="Введите номер телефона" /> На телефон</label>
+                                <label class="checked"><input type="radio" name="type" value="1" data-placeholder="Введите номер карты" checked /> По номеру карты</label>
+                                <label><input type="radio" name="type" value="2" data-placeholder="Введите номер счета" /> По номеру счета</label>
+                                <label><input type="radio" name="type" value="3" data-placeholder="Введите номер телефона" /> По номеру телефона</label>
                             </div>
-                            <div class="payment__row">
-                                <input class="payment__input payment__input_num" type="text" name="num" placeholder="Введите номер карты" value=""/>
+                            <div class="payment__row form__input-container">
+                                <input class="payment__input payment__input_num" type="text" name="num" value=""/>
+                                <span class="form__placeholder">Введите номер карты</span>
                             </div>
-                            <div class="payment__row rouble-suffix">
-                                <input class="payment__input" type="text" name="summ" placeholder="Сумма оплаты" value=""/>
+                            <div class="payment__row rouble-suffix form__input-container">
+                                <input class="payment__input" type="text" name="summ" value=""/>
+                                <span class="form__placeholder">Сумма оплаты</span>
                             </div>
                             <div class="clearfix"></div>
                             <div class="payment__row">
@@ -485,7 +503,7 @@
         <div id="tab4-item1" class="tabs__tab__accordeon__item active">
             <a href="#tab4-item1" class="tabs__tab__accordeon__item__title">Оплата с телефона</a>
 
-            <div class="tabs__tab__accordeon__item__body payment-phone active">
+            <div class="tabs__tab__accordeon__item__body payment-phone hidden-bg active">
                 <div class="instruction-title">Описание метода</div>
                 <ul class="blue-arrows">
                     <li>
@@ -494,15 +512,17 @@
 
                         <form class="payment" action="">
                             <div class="payment__row payment__row_radio">
-                                <label class="checked"><input type="radio" name="type" value="1" data-placeholder="Введите номер карты" checked /> На карту</label>
-                                <label><input type="radio" name="type" value="2" data-placeholder="Введите номер счета" /> На счет</label>
-                                <label><input type="radio" name="type" value="3" data-placeholder="Введите номер договора" /> На договор</label>
+                                <label class="checked"><input type="radio" name="type" value="1" data-placeholder="Введите номер карты" checked /> По номеру карты</label>
+                                <label><input type="radio" name="type" value="2" data-placeholder="Введите номер счета" /> По номеру счета</label>
+                                <label><input type="radio" name="type" value="3" data-placeholder="Введите номер договора" /> По номеру договора</label>
                             </div>
-                            <div class="payment__row">
-                                <input class="payment__input payment__input_num" type="text" name="num" placeholder="Введите номер карты" value=""/>
+                            <div class="payment__row form__input-container">
+                                <input class="payment__input payment__input_num" type="text" name="num" value=""/>
+                                <span class="form__placeholder">Введите номер карты</span>
                             </div>
-                            <div class="payment__row rouble-suffix">
-                                <input class="payment__input" type="text" name="summ" placeholder="Сумма оплаты" value=""/>
+                            <div class="payment__row rouble-suffix form__input-container">
+                                <input class="payment__input" type="text" name="summ" value=""/>
+                                <span class="form__placeholder">Сумма оплаты</span>
                             </div>
                             <div class="clearfix"></div>
                             <div class="payment__row">
@@ -590,7 +610,9 @@
                                 <span class="form__placeholder">Где и кем выдан</span>
                             </div>
 
-                            <div class="col-xs-4">
+                            <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
+
+                            <div class="col-xs-6 col-lg-4">
                                 <input type="submit" name="submit" value="Сформировать бланк" class="form__button"/>
                             </div>
 
@@ -624,10 +646,10 @@
 
 <div id="tab6" class="tabs__tab">
     <div class="tabs__tab__accordeon">
-        <div id="tab6-item1" class="tabs__tab__accordeon__item">
+        <div id="tab6-item1" class="tabs__tab__accordeon__item active">
             <a href="#tab6-item1" class="tabs__tab__accordeon__item__title">Через отделения сторонних банков</a>
 
-            <div class="tabs__tab__accordeon__item__body other-banks">
+            <div class="tabs__tab__accordeon__item__body other-banks hidden-bg active">
                 <div class="instruction-title">Инструкция по оплате</div>
                 <ul class="blue-arrows">
                     <li>
@@ -647,7 +669,7 @@
             <a href="#tab6-item2" class="tabs__tab__accordeon__item__title">Через интернет и мобильные приложения
                 сторонних банков</a>
 
-            <div class="tabs__tab__accordeon__item__body mobile-and-internet">
+            <div class="tabs__tab__accordeon__item__body mobile-and-internet hidden-bg">
                 <div class="instruction-title">Инструкция по оплате</div>
                 <ul class="blue-arrows">
                     <li>
@@ -666,7 +688,7 @@
         <div id="tab6-item3" class="tabs__tab__accordeon__item">
             <a href="#tab6-item3" class="tabs__tab__accordeon__item__title">С зарплатного счета / через бухгалтерию</a>
 
-            <div class="tabs__tab__accordeon__item__body bookkeeping">
+            <div class="tabs__tab__accordeon__item__body bookkeeping hidden-bg">
                 <div class="instruction-title">Инструкция по оплате</div>
                 <ul class="blue-arrows">
                     <li>
@@ -691,7 +713,7 @@
         <div id="tab6-item4" class="tabs__tab__accordeon__item">
             <a href="#tab6-item4" class="tabs__tab__accordeon__item__title">Реквизиты</a>
 
-            <div class="tabs__tab__accordeon__item__body requisites">
+            <div class="tabs__tab__accordeon__item__body requisites hidden-bg">
                 <div class="instruction-title">Инструкция по оплате</div>
                 <ul class="blue-arrows">
                     <li>
@@ -720,7 +742,7 @@
         <a href="#payment2" class="payment-systems__items__item col-xs-2">
             <img src="assets/img/payment-systems/s2.png" alt=""/>
         </a>
-        <a href="#payment3" class="payment-systems__items__item col-xs-2 active">
+        <a href="#payment3" class="payment-systems__items__item col-xs-2">
             <img src="assets/img/payment-systems/s3.png" alt=""/>
         </a>
         <a href="#payment4" class="payment-systems__items__item col-xs-2">
@@ -734,7 +756,7 @@
         </a>
     </div>
     <div class="payment-systems__blocks row row-no-padding">
-        <div id="payment3" class="payment-systems__blocks__item active">
+        <div id="payment3" class="payment-systems__blocks__item">
             <div class="col-xs-12">
                 <div class="h1 h_red">
                     ЧЕРЕЗ ПЛАТЕЖНЫЙ СЕРВИС QIWI

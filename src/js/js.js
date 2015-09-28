@@ -1,9 +1,16 @@
 $(function(){
 
+    // Overlay trigger
+    $('#overlay').click(function() {
+        $(this).removeClass('active');
+        $('.modal-opened').hide().removeClass('modal-opened');
+    });
+
     //Choose city
     $('.choose-city__current-city').click(function(){
+        $('#overlay').toggleClass('active');
         $(this).toggleClass('active');
-        $('.cities').toggle();
+        $('.cities').toggle().toggleClass('modal-opened');
     });
 
     //Main menu
@@ -15,6 +22,14 @@ $(function(){
         var href =  $(this).attr('href');
         $('.tabs__tab').removeClass('active');
         $(href).addClass('active');
+
+        if(history.pushState) {
+            history.pushState(null, null, href);
+        } else {
+            window.location.hash = href;
+        }
+
+        return false;
     });
 
     //Tabs
@@ -74,20 +89,27 @@ $(function(){
         });
     }
 
+    $('.map__search__input').focus(function(){
+        $(this).parent().addClass('focus');
+    });
+    $('.map__search__input').blur(function(){
+        $(this).parent().removeClass('focus');
+    });
+
     //Forms
     $('.form__placeholder').click(function(){
         $(this).addClass('focus');
         $(this).parent().find('input,textarea').focus();
     });
-    $('.form input[type="text"], .form textarea').focus(function(){
+    $('form input[type="text"], .form textarea').focus(function(){
         $(this).parent().find('.form__placeholder').addClass('focus');
     });
-    $('.form input[type="text"], .form textarea').blur(function(){
+    $('form input[type="text"], .form textarea').blur(function(){
         if ($(this).val() == '') {
             $(this).parent().find('.form__placeholder').removeClass('focus');
         }
     });
-    $('.form input[type="text"], .form textarea').keyup(function(){
+    $('form input[type="text"], .form textarea').keyup(function(){
        if ($(this).val() != '') $(this).parent().addClass('ok');
         else $(this).parent().removeClass('ok');
     });
@@ -95,8 +117,15 @@ $(function(){
     $('.payment__row_radio label').click(function(){
         $(this).parent().find('label').removeClass('checked');
         $(this).addClass('checked');
-        $(this).parent().parent().find('.payment__input_num').attr('placeholder', $('input', this).data('placeholder'));
+        $(this).parent().parent().find('.payment__input_num').parent().find('.form__placeholder').text($('input', this).data('placeholder')); //Sorry for this... =\ deadline-driven development!
     });
+
+    // Hash navigation
+
+    if(window.location.hash) {
+        var hash = window.location.hash; //Puts hash in variable, and removes the # character
+        $('a[href="'+hash+'"]').click();
+    }
 
 });
 

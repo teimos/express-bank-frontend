@@ -94,7 +94,7 @@ p {
 @blue-hover: #3075bc;
 @blue-active: #4987c7;
 
-.input:focus{
+.input:focus {
 	outline: none;
 }
 
@@ -200,6 +200,45 @@ p {
 		background: transparent url('../img/icon-white-arrow.png') 6px 0 no-repeat;
 		color: white;
 	}
+}
+
+#overlay {
+	display: none;
+	z-index: 25;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background: none;
+
+	&.active {
+		display: block;
+	}
+}
+
+// Modals
+
+.modal-content {
+	border-radius: 0;
+}
+
+.modal-body {
+	padding: 70px 60px 70px 126px;
+	
+	&_error {
+		background: transparent url('../img/icon-error.png') 40px 70px no-repeat;
+	}
+	
+	&_red {
+		background-color: #e74646;
+		color: #ffffff;
+		font-size: 24px;
+		font-weight: @light;
+	}
+}
+
+.modal-sm {
+	max-width: 472px;
+	width: 100%;
 }
 
 // Service Unavailable
@@ -928,6 +967,15 @@ p {
 			display: block;
 			background: transparent url('../img/icon-find.png') 50% 50% no-repeat;
 			opacity: 0.3;
+			filter: grayscale(100%);
+			.transition();
+		}
+
+		&.focus {
+			&:before {
+				opacity: 1;
+				filter: grayscale(0%);
+			}
 		}
 
 		&:after {
@@ -959,6 +1007,26 @@ p {
 			text-transform: uppercase;
 			text-align: center;
 			background: none;
+		}
+
+		&__error {
+			position: absolute;
+			width: 100%;
+			top: 100%;
+			left: 0;
+			padding: 20px 16px;
+			text-transform: uppercase;
+			font-size: 13px;
+			line-height: 13px;
+			color: #c80000;
+			background: #ffffff;
+			z-index: 20;
+			box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.75);
+			display: none;
+
+			&.opened {
+				display: block;
+			}
 		}
 	}
 }
@@ -1305,7 +1373,7 @@ p {
 			width: 100%;
 			height: 36px;
 			border: 1px solid #bfbfbf;
-			padding: 0 10px;
+			padding: 0 23px;
 			font-size: 13px;
 		}
 
@@ -1356,14 +1424,14 @@ p {
 			max-width: 366px;
 		}
 	}
-	
+
 	&__row {
 		margin-bottom: 12px;
 		position: relative;
 
 		&_radio {
 			padding-bottom: 10px;
-			
+
 			input {
 				display: none;
 			}
@@ -1371,13 +1439,18 @@ p {
 			label {
 				display: inline-block;
 				text-transform: uppercase;
-				padding: 15px 0;
+				padding: 5px 10px;
 				text-align: center;
 				border: 1px solid #b6b6b6;
 				border-radius: 6px;
 				cursor: pointer;
 				margin-right: 15px;
 				width: 150px;
+				.transition();
+
+				&:hover {
+					border-color: #276bb1;
+				}
 
 				&.checked {
 					color: white;
@@ -1474,6 +1547,10 @@ p {
 		height: 120px;
 	}
 
+	.form__button {
+		margin-top: 0;
+	}
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -1545,6 +1622,14 @@ p {
 
 	.payment-systems__items__item {
 		height: 124px;
+	}
+
+	.hidden-bg {
+		background: none;
+	}
+
+	.blue-arrows {
+		padding-right: 0;
 	}
 
 }

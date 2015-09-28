@@ -139,6 +139,36 @@ p {
   background: transparent url('../img/icon-white-arrow.png') 6px 0 no-repeat;
   color: white;
 }
+#overlay {
+  display: none;
+  z-index: 25;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: none;
+}
+#overlay.active {
+  display: block;
+}
+.modal-content {
+  border-radius: 0;
+}
+.modal-body {
+  padding: 70px 60px 70px 126px;
+}
+.modal-body_error {
+  background: transparent url('../img/icon-error.png') 40px 70px no-repeat;
+}
+.modal-body_red {
+  background-color: #e74646;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+}
+.modal-sm {
+  max-width: 472px;
+  width: 100%;
+}
 .service-unavailable {
   border: 1px solid #bababa;
   font-size: 36px;
@@ -765,6 +795,15 @@ p {
   display: block;
   background: transparent url('../img/icon-find.png') 50% 50% no-repeat;
   opacity: 0.3;
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.map__search.focus:before {
+  opacity: 1;
+  filter: grayscale(0%);
 }
 .map__search:after {
   position: absolute;
@@ -792,6 +831,24 @@ p {
   text-transform: uppercase;
   text-align: center;
   background: none;
+}
+.map__search__error {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  padding: 20px 16px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  color: #c80000;
+  background: #ffffff;
+  z-index: 20;
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.75);
+  display: none;
+}
+.map__search__error.opened {
+  display: block;
 }
 .spoilers {
   padding: 0;
@@ -1068,7 +1125,7 @@ p {
   width: 100%;
   height: 36px;
   border: 1px solid #bfbfbf;
-  padding: 0 10px;
+  padding: 0 23px;
   font-size: 13px;
 }
 .form__input-container textarea {
@@ -1128,13 +1185,20 @@ p {
 .payment__row_radio label {
   display: inline-block;
   text-transform: uppercase;
-  padding: 15px 0;
+  padding: 5px 10px;
   text-align: center;
   border: 1px solid #b6b6b6;
   border-radius: 6px;
   cursor: pointer;
   margin-right: 15px;
   width: 150px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.payment__row_radio label:hover {
+  border-color: #276bb1;
 }
 .payment__row_radio label.checked {
   color: white;
@@ -1195,6 +1259,9 @@ p {
   .main-menu__link__shape {
     height: 120px;
   }
+  .form__button {
+    margin-top: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .main-header__phone {
@@ -1249,6 +1316,12 @@ p {
   }
   .payment-systems__items__item {
     height: 124px;
+  }
+  .hidden-bg {
+    background: none;
+  }
+  .blue-arrows {
+    padding-right: 0;
   }
 }
 @media only screen and (max-width: 768px) {
