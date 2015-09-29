@@ -1161,20 +1161,48 @@ p {
 .payment {
   padding-top: 25px;
 }
+.payment .form__placeholder {
+  max-width: 200px;
+  left: 0;
+}
 .payment__input {
   height: 36px;
   border: 1px solid #bfbfbf;
   background: #ffffff;
   padding: 0 15px;
   width: 100%;
-  max-width: 164px;
+  max-width: 200px;
 }
 .payment__input_num {
   max-width: 366px;
 }
+.payment .form__input-container input {
+  padding: 0 10px;
+}
 .payment__row {
   margin-bottom: 12px;
   position: relative;
+}
+.payment__row_stacked {
+  display: inline-block;
+  margin-right: 15px;
+  max-width: 200px;
+  width: 100%;
+}
+.payment__row_middle {
+  width: 100%;
+  max-width: 270px;
+  margin-right: 0;
+}
+.payment__row_middle .payment__input {
+  max-width: 310px;
+}
+.payment__row_right {
+  padding-left: 35px;
+  text-align: right;
+  width: 100%;
+  max-width: 270px;
+  margin-right: 0;
 }
 .payment__row_radio {
   padding-bottom: 10px;
@@ -1327,5 +1355,10 @@ p {
 @media only screen and (max-width: 768px) {
   .cities {
     width: 100%;
+  }
+  .payment__row_right {
+    display: block;
+    text-align: left;
+    padding-left: 0;
   }
 }

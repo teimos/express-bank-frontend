@@ -1412,22 +1412,58 @@ p {
 .payment {
 	padding-top: 25px;
 
+	.form__placeholder {
+		max-width: 200px;
+		left: 0;
+	}
+
 	&__input {
 		height: 36px;
 		border: 1px solid #bfbfbf;
 		background: #ffffff;
 		padding: 0 15px;
 		width: 100%;
-		max-width: 164px;
+		max-width: 200px;
 
 		&_num {
 			max-width: 366px;
 		}
 	}
 
+	.form__input-container {
+		input {
+			padding: 0 10px;
+		}
+	}
+
 	&__row {
 		margin-bottom: 12px;
 		position: relative;
+
+		&_stacked {
+			display: inline-block;
+			margin-right: 15px;
+			max-width: 200px;
+			width: 100%;
+		}
+
+		&_middle {
+			width: 100%;
+			max-width: 270px;
+			margin-right: 0;
+
+			.payment__input {
+				max-width: 310px;
+			}
+		}
+
+		&_right {
+			padding-left: 35px;
+			text-align: right;
+			width: 100%;
+			max-width: 270px;
+			margin-right: 0;
+		}
 
 		&_radio {
 			padding-bottom: 10px;
@@ -1640,4 +1676,9 @@ p {
 		width: 100%;
 	}
 
+	.payment__row_right {
+		display: block;
+		text-align: left;
+		padding-left: 0;
+	}
 }
