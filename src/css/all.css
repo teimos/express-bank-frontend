@@ -194,10 +194,10 @@ p {
 .main-header__out {
   height: 133px;
   padding: 42px 18px 0 18px !important;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .main-header__out:hover {
   box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
@@ -210,10 +210,10 @@ p {
   padding: 10px 12px 7px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .main-header__out__link:hover {
   color: #ffffff;
@@ -228,10 +228,10 @@ p {
   background-image: url('../img/icon-phone.png');
   background-position: 40px 47px;
   background-repeat: no-repeat;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .main-header__phone:hover {
   box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.5);
@@ -266,10 +266,10 @@ p {
   border-radius: 6px;
   cursor: pointer;
   position: relative;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .choose-city__current-city.active {
   box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
@@ -336,10 +336,10 @@ p {
   display: block;
   padding: 2px 15px;
   color: black;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .cities__link:hover {
   color: white;
@@ -373,10 +373,10 @@ p {
   height: 330px;
   color: #ffffff;
   padding: 60px 20px 0 35px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.85);
   z-index: 10;
   overflow: hidden;
@@ -454,10 +454,10 @@ p {
   line-height: 14px;
   padding: 23px 58px 24px 29px;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .promo__slider__slide_1__button:focus,
 .promo__slider__slide_1__button:hover {
@@ -514,18 +514,18 @@ p {
   width: 100%;
   font-size: 13px;
   color: #ffffff;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .main-menu__link .icon {
   color: #c4e1ff;
   font-size: 38px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .main-menu__link .icon-onlain-platej {
   font-size: 32px;
@@ -540,10 +540,10 @@ p {
   height: 130px;
   padding-top: 55px;
   position: relative;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .main-menu__link__shape:after {
   content: '';
@@ -556,19 +556,19 @@ p {
   left: 50%;
   margin-left: -32px;
   top: 42px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .main-menu__link__caption {
   height: 50px;
   padding: 0 33px;
   line-height: 15px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .main-menu__link:hover {
   text-decoration: none;
@@ -652,10 +652,10 @@ p {
   background: #4987c7;
   border-radius: 5px;
   padding: 9px 72px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .tabs__tab__accordeon__item__title:before {
   content: '';
@@ -678,10 +678,10 @@ p {
   height: 41px;
   background: transparent url('../img/icon-arrow-down.png') 50% 50% no-repeat;
   transform: rotate(0deg);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .tabs__tab__accordeon__item__title:hover {
   text-decoration: none;
@@ -708,10 +708,10 @@ p {
 }
 .map__items__item {
   padding: 25px 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .map__items__item:hover {
   box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.52);
@@ -770,9 +770,6 @@ p {
   font-weight: 400;
   text-transform: uppercase;
 }
-.map__sub__additional {
-  padding-top: 28px;
-}
 .map__sub__additional__item {
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -796,10 +793,10 @@ p {
   background: transparent url('../img/icon-find.png') 50% 50% no-repeat;
   opacity: 0.3;
   filter: grayscale(100%);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .map__search.focus:before {
   opacity: 1;
@@ -886,10 +883,10 @@ p {
   border-bottom: 4px solid transparent;
   left: 13px;
   top: 6px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transform: rotate(0deg);
 }
 .spoilers__item__title:focus {
@@ -945,10 +942,10 @@ p {
   width: 100%;
   height: 7px;
   background: #e74646;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .payment-systems__items__item:hover:before {
   height: 14px;
@@ -1147,10 +1144,10 @@ p {
   color: #919191;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .form__placeholder.focus {
   font-size: 8px;
@@ -1220,10 +1217,10 @@ p {
   cursor: pointer;
   margin-right: 15px;
   width: 150px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .payment__row_radio label:hover {
   border-color: #276bb1;

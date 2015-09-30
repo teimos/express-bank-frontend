@@ -64,7 +64,6 @@ $(function(){
         scaleSlider();
     });
 
-
     // Slider
     $('.promo__slider').unslider({
         keys: false,
@@ -79,12 +78,20 @@ $(function(){
         onDelete: function() { return false }
     });
 
+
+
     //Yandex Map
     if (typeof ymaps != 'undefined' && $('#yandex-map').size() > 0) {
         ymaps.ready(function(){
             map = new ymaps.Map("yandex-map", {
                 center: [55.76, 37.64],
                 zoom: 10
+            });
+
+            //Masonry map items
+            $('.map__items').masonry({
+                itemSelector: '.map__items__item',
+                transitionDuration: 0
             });
         });
     }
