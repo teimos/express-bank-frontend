@@ -23,6 +23,8 @@ $(function(){
         $('.tabs__tab').removeClass('active');
         $(href).addClass('active');
 
+        msnry();
+
         if(history.pushState) {
             history.pushState(null, null, href);
         } else {
@@ -88,11 +90,7 @@ $(function(){
                 zoom: 10
             });
 
-            //Masonry map items
-            $('.map__items').masonry({
-                itemSelector: '.map__items__item',
-                transitionDuration: 0
-            });
+            msnry();
         });
     }
 
@@ -135,6 +133,14 @@ $(function(){
     }
 
 });
+
+function msnry() {
+    //Masonry map items
+    $('.map__items').masonry({
+        itemSelector: '.map__items__item',
+        transitionDuration: 0
+    });
+}
 
 function scaleSlider(){
     var t = $('.promo__slider__container');
