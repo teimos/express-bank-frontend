@@ -119,6 +119,12 @@ p {
   padding: 30px 340px 45px 0;
   list-style-type: none;
 }
+.blue-arrows_short {
+  padding-bottom: 0;
+}
+.blue-arrows_short li:last-child {
+  padding-bottom: 0;
+}
 .blue-arrows li {
   padding: 5px 0 25px 55px;
   background: transparent url('../img/icon-blue-arrow.png') 6px 0 no-repeat;
@@ -1283,6 +1289,9 @@ p {
 @media only screen and (max-width: 1200px) {
   .main-menu__link__shape {
     height: 120px;
+  }
+  .main-menu__link__caption {
+    height: 60px;
   }
   .form__button {
     margin-top: 0;
