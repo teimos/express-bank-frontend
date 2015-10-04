@@ -268,13 +268,13 @@ p {
 	margin-bottom: 16px;
 
 	&__logo {
-		width: 100%;
-		max-width: 100%;
+		text-align: center;
 		display: block;
 		padding-top: 31px;
 
 		img {
-			width: 100%;
+			max-width: 286px;
+			margin: 0 auto;
 		}
 	}
 
@@ -1692,5 +1692,107 @@ p {
 		display: block;
 		text-align: left;
 		padding-left: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	.full480 {
+		width: 100%;
+	}
+
+	.main-header__phone {
+		padding: 42px 0 0 0 !important;
+		text-align: center;
+		background-position: 50% 10px;
+
+		&__caption_top {
+			font-size: 10px;
+		}
+
+		&__numbers {
+			font-size: 15px;
+		}
+	}
+
+	.main-header__out,
+	.main-header__phone {
+		height: 105px;
+	}
+
+	.main-header__out {
+		padding: 25px 18px 0!important;
+	}
+
+    .cities__wrapper > div {
+	    width: 100%;
+    }
+
+    .promo {
+	    display: none;
+    }
+
+	.main-menu__link__shape:after {
+		display: none;
+	}
+
+	.main-menu__link.active .icon {
+		font-size: 30px;
+	}
+
+	.main-menu__column,
+	.main-menu__link.active .main-menu__link__shape:after,
+	.main-menu__link__shape {
+		height: 58px;
+	}
+
+	.main-menu__link.active .main-menu__link__shape {
+		padding-top: 14px;
+	}
+
+	.main-menu__column__onlain-platej .main-menu__link__shape,
+	.main-menu__column__pochta-rossii .main-menu__link__shape {
+		padding-top: 19px;
+	}
+
+	.main-menu__link__shape {
+		padding-top: 16px;
+	}
+
+	.tabs__tab__accordeon__item__title {
+		font-size: 17px;
+		padding: 9px 9px 9px 72px;
+		/*line-height: 22px;*/
+	}
+
+	.instruction-title {
+		padding: 0 10px 0 55px;
+		font-size: 20px;
+	}
+
+	.blue-arrows {
+		padding-top: 10px;
+	}
+
+	.payment__row_radio label {
+		width: 100%;
+	}
+
+	.payment .rouble-suffix:after {
+		display: none;
+	}
+
+	.payment__button {
+		max-width: 100%;
+	}
+
+	.russian-post {
+		background-image: none;
+		height: auto;
+		padding: 15px;
+
+		.white-arrows {
+			padding-left: 0;
+		}
 	}
 }
