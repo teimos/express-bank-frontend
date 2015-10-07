@@ -30,6 +30,12 @@
     </div>
 </div>
 
+<div id="loading">
+    <img src="assets/img/loading.gif" alt=""/>
+
+    <div class="caption">Устанавливается связь с банком...</div>
+</div>
+
 <header class="main-header container">
     <div class="row row-no-padding">
         <div class="col-xs-4 col-md-3 full480">
@@ -369,7 +375,8 @@
                         </div>
                         <div class="col-xs-9 col-sm-5 col-md-6 col-sm-offset-1">
                             <div class="map__search">
-                                <input class="map__search__input" type="text" placeholder="Поиск по адресу" />
+                                <input class="map__search__input" type="text" placeholder="Поиск по адресу"/>
+
                                 <div class="map__search__error opened">
                                     К сожалению, такой адрес нам неизвестен
                                 </div>
@@ -389,7 +396,9 @@
                             </div>
 
                             <div class="col-xs-8 col-md-9 col-xs-offset-1 col-md-offset-0">
-                                <div class="col-xs-12 col-md-9 map__sub__title">г. Хабаровск, ул. Большая, д. 87, корп. Д</div>
+                                <div class="col-xs-12 col-md-9 map__sub__title">г. Хабаровск, ул. Большая, д. 87, корп.
+                                    Д
+                                </div>
 
                                 <div class="col-xs-12 col-md-5">
                                     <div class="map__sub__distance">На расстоянии 120 м от вас</div>
@@ -527,36 +536,49 @@
 
                         <form class="payment" action="">
                             <div class="payment__row payment__row_radio">
-                                <label class="checked"><input type="radio" name="type" value="1" data-placeholder="Введите номер карты" checked /> По номеру карты</label>
-                                <label><input type="radio" name="type" value="2" data-placeholder="Введите номер счета" /> По номеру счета</label>
-                                <label><input type="radio" name="type" value="3" data-placeholder="Введите номер телефона" /> По номеру телефона</label>
+                                <label class="checked"><input data-target="block1" type="radio" name="type" value="1"
+                                                              data-placeholder="Введите номер карты" checked/> По номеру
+                                    карты</label>
+                                <label><input data-target="block2" type="radio" name="type" value="2"
+                                              data-placeholder="Введите номер счета"/> По номеру счета</label>
+                                <label><input data-target="block2" type="radio" name="type" value="3"
+                                              data-placeholder="Введите номер телефона"/> По номеру телефона</label>
                             </div>
-                            <div class="payment__row form__input-container">
-                                <input class="payment__input" type="text" name="surname" value=""/>
-                                <span class="form__placeholder">Фамилия</span>
+                            <div class="block block1 active">
+                                <a class="pay-btn" href="#">Оплатить</a>
                             </div>
-                            <div class="payment__row form__input-container">
-                                <input class="payment__input" type="text" name="name" value=""/>
-                                <span class="form__placeholder">Имя</span>
-                            </div>
-                            <div class="payment__row payment__row_stacked form__input-container">
-                                <input class="payment__input" type="text" name="patronymic" value=""/>
-                                <span class="form__placeholder">Отчество</span>
-                            </div>
-                            <div class="payment__row payment__row_stacked payment__row_middle form__input-container">
-                                <input class="payment__input" type="text" name="phone" value=""/>
-                                <span class="form__placeholder">Контактный номер</span>
-                            </div>
-                            <div class="payment__row form__input-container">
-                                <input class="payment__input payment__input_num" type="text" name="num" value=""/>
-                                <span class="form__placeholder">Введите номер карты</span>
-                            </div>
-                            <div class="payment__row payment__row_stacked rouble-suffix form__input-container">
-                                <input class="payment__input" type="text" name="summ" value=""/>
-                                <span class="form__placeholder">Сумма оплаты</span>
-                            </div>
-                            <div class="payment__row payment__row_stacked payment__row_right">
-                                <input class="payment__button" type="submit" name="submit" value="Оплатить"/>
+                            <div class="block block2">
+                                <div class="payment__row form__input-container">
+                                    <input class="payment__input" type="text" name="surname" value=""/>
+                                    <span class="form__placeholder">Фамилия</span>
+                                </div>
+                                <div class="payment__row form__input-container">
+                                    <input class="payment__input" type="text" name="name" value=""/>
+                                    <span class="form__placeholder">Имя</span>
+                                </div>
+                                <div class="payment__row payment__row_stacked form__input-container">
+                                    <input class="payment__input" type="text" name="patronymic" value=""/>
+                                    <span class="form__placeholder">Отчество</span>
+                                </div>
+                                <div class="payment__row payment__row_stacked payment__row_middle form__input-container">
+                                    <input class="payment__input" type="text" name="phone" value=""/>
+                                    <span class="form__placeholder">Контактный номер</span>
+                                </div>
+                                <div class="payment__row form__input-container">
+                                    <input class="payment__input payment__input_num" type="text" name="num" value=""/>
+                                    <span class="form__placeholder">Введите номер карты</span>
+                                </div>
+                                <div class="payment__row payment__row_stacked rouble-suffix form__input-container">
+                                    <input class="payment__input" type="text" name="summ" value=""/>
+                                    <span class="form__placeholder">Сумма оплаты</span>
+                                </div>
+                                <div class="payment__row payment__row_stacked payment__row_right">
+                                    <input class="payment__button" type="submit" name="submit" value="Оплатить"/>
+                                </div>
+                                <div data-percent="2.5" class="payment__row form__input-container commission-container">
+                                    <div class="commission">Комиссия: <span>0.00</span> руб.</div>
+                                    <div class="writeoff">К списанию: <span>0.00</span> руб.</div>
+                                </div>
                             </div>
                         </form>
 
@@ -581,9 +603,13 @@
 
                         <form class="payment" action="">
                             <div class="payment__row payment__row_radio">
-                                <label class="checked"><input type="radio" name="type" value="1" data-placeholder="Введите номер карты" checked /> По номеру карты</label>
-                                <label><input type="radio" name="type" value="2" data-placeholder="Введите номер счета" /> По номеру счета</label>
-                                <label><input type="radio" name="type" value="3" data-placeholder="Введите номер договора" /> По номеру договора</label>
+                                <label class="checked"><input type="radio" name="type" value="1"
+                                                              data-placeholder="Введите номер карты" checked/> По номеру
+                                    карты</label>
+                                <label><input type="radio" name="type" value="2"
+                                              data-placeholder="Введите номер счета"/> По номеру счета</label>
+                                <label><input type="radio" name="type" value="3"
+                                              data-placeholder="Введите номер договора"/> По номеру договора</label>
                             </div>
                             <div class="payment__row form__input-container">
                                 <input class="payment__input" type="text" name="surname" value=""/>

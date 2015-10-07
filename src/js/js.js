@@ -1,5 +1,11 @@
 $(function(){
 
+    // Pay Button
+    $('.pay-btn').click(function(){
+        $('#loading').show();
+        return false;
+    });
+
     // Overlay trigger
     $('#overlay').click(function() {
         $(this).removeClass('active');
@@ -80,8 +86,6 @@ $(function(){
         onDelete: function() { return false }
     });
 
-
-
     //Yandex Map
     if (typeof ymaps != 'undefined' && $('#yandex-map').size() > 0) {
         ymaps.ready(function(){
@@ -120,9 +124,28 @@ $(function(){
     });
 
     $('.payment__row_radio label').click(function(){
+        var target = $('input', this).data('target');
+        if (target) {
+            $(this).parents('.payment').find('.block').removeClass('active');
+            $(this).parents('.payment').find('.' + target).addClass('active');
+        }
         $(this).parent().find('label').removeClass('checked');
         $(this).addClass('checked');
         $(this).parent().parent().find('.payment__input_num').parent().find('.form__placeholder').text($('input', this).data('placeholder')); //Sorry for this... =\ deadline-driven development!
+    });
+
+    // Percents write-off
+    $('.payment__input[name="summ"]').keyup(function(){
+        var commissionContainer = $(this).parents('form').find('.commission span');
+        var writeoffContainer = $(this).parents('form').find('.writeoff span');
+        var percent = parseFloat($(this).parents('form').find('.commission-container').data('percent'));
+        var val = parseFloat($(this).val());
+        var commission = (val / 100) * percent;
+        var writeoff = val + commission;
+        if (!commission) commission = 0;
+        if (!writeoff) writeoff = 0;
+        commissionContainer.text(commission.toFixed(2));
+        writeoffContainer.text(writeoff.toFixed(2));
     });
 
     // Hash navigation
