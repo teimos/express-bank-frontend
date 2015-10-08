@@ -284,6 +284,142 @@ p {
 	text-transform: uppercase;
 }
 
+// Service Title
+
+.service-title {
+	padding: 19px 0;
+	background: #276bb1;
+	text-align: center;
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-bottom: 18px;
+}
+
+// p2p
+
+.p2p {
+	display: table;
+	width: 100%;
+	margin-bottom: 20px;
+
+	&__col {
+		width: 50%;
+		display: table-cell;
+		border: 1px solid #bababa;
+		.transition();
+
+		&:hover {
+			box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+		}
+	}
+
+	&__wrapper {
+		padding: 15px;
+	}
+
+	&__title {
+		font-size: 18px;
+		line-height: 18px;
+		font-weight: @bold;
+		color: #121212;
+		margin: 10px 0 15px;
+
+		&_sub {
+			margin: 20px 0 10px;
+		}
+	}
+
+	.p2p__input-container {
+		margin-bottom: 12px;
+		font-size: 0;
+
+		&_no_mb {
+			margin-bottom: 4px;
+		}
+	}
+
+	.form__input-container input {
+		padding: 0 15px;
+		height: 38px;
+	}
+
+	.form__placeholder {
+		padding: 0 15px;
+		left: 1px;
+		max-width: 280px;
+		height: 38px;
+		color: #323232;
+	}
+
+	&__input {
+		max-width: 280px;
+		height: 38px;
+	}
+
+	&__select {
+		display: inline-block;
+		margin-bottom: 12px;
+
+		&_month {
+			width: 134px;
+			max-width: 134px;
+			margin-right: 10px;
+		}
+
+		&_year {
+			width: 105px;
+			max-width: 105px;
+		}
+	}
+
+	&__cvc {
+		max-width: 98px;
+		height: 25px !important;
+		margin-right: 10px;
+	}
+	
+	&__inline-placeholder {
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+
+	.payment__button {
+		max-width: 113px;
+		margin-right: 13px;
+		vertical-align: top;
+	}
+
+	&__terms {
+		font-size: 14px;
+		line-height: 16px;
+		display: inline-block;
+		padding-top: 2px;
+
+		a {
+			text-decoration: underline;
+			color: #276bb1;
+		}
+	}
+
+	&__cancel {
+		max-width: 113px;
+		width: 100%;
+		text-align: center;
+
+		a {
+			font-size: 14px;
+			color: #276bb1;
+			text-decoration: underline;
+		}
+	}
+
+	&__icons {
+		font-size: 0;
+	}
+}
+
 // Header
 
 .main-header {
@@ -1570,20 +1706,21 @@ p {
 		background: #276bb1;
 		text-align: center;
 		color: #ffffff;
+		font-size: 14px;
 	}
+}
 
-	.rouble-suffix {
-		display: inline-block;
+.rouble-suffix {
+	display: inline-block;
 
-		&:after {
-			content: 'РУБ';
-			display: block;
-			position: absolute;
-			font-size: 18px;
-			font-weight: bold;
-			right: -45px;
-			top: 5px;
-		}
+	&:after {
+		content: 'РУБ';
+		display: block;
+		position: absolute;
+		font-size: 18px;
+		font-weight: bold;
+		right: -45px;
+		top: 5px;
 	}
 }
 
@@ -1856,4 +1993,13 @@ p {
 			padding-left: 0;
 		}
 	}
+
+    .p2p {
+	    display: block;
+    }
+
+    .p2p__col {
+	    width: 100%;
+	    display: block;
+    }
 }
