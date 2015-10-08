@@ -222,6 +222,10 @@ p {
   width: 100%;
   margin-bottom: 20px;
 }
+.p2p .payment__button_notify {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 .p2p__col {
   width: 50%;
   display: table-cell;
@@ -237,6 +241,14 @@ p {
 .p2p__wrapper {
   padding: 15px;
 }
+.p2p__wrapper_middle {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.p2p__wrapper_big {
+  padding-left: 49px;
+  padding-right: 48px;
+}
 .p2p__title {
   font-size: 18px;
   line-height: 18px;
@@ -247,12 +259,41 @@ p {
 .p2p__title_sub {
   margin: 20px 0 10px;
 }
+.p2p__title_notify {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.p2p__title_notify_small {
+  font-size: 14px;
+}
+.p2p__text_notify {
+  font-size: 18px;
+}
+.p2p__text_notify_small {
+  font-size: 14px;
+  line-height: 15px;
+}
+.p2p__status_notify {
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+.p2p__status_notify.green {
+  color: #008d1e;
+}
+.p2p__status_notify.red {
+  color: red;
+}
 .p2p .p2p__input-container {
   margin-bottom: 12px;
   font-size: 0;
 }
 .p2p .p2p__input-container_no_mb {
   margin-bottom: 4px;
+}
+.p2p__summ-notify {
+  font-size: 40px;
+  font-weight: 700;
 }
 .p2p .form__input-container input {
   padding: 0 15px;
@@ -1401,14 +1442,21 @@ p {
   background: #276bb1;
 }
 .payment__button {
+  display: block;
   width: 100%;
   max-width: 164px;
   height: 36px;
+  line-height: 36px;
   border: none;
   background: #276bb1;
   text-align: center;
   color: #ffffff;
   font-size: 14px;
+}
+.payment__button:focus,
+.payment__button:hover {
+  text-decoration: none;
+  color: white;
 }
 .rouble-suffix {
   display: inline-block;

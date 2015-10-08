@@ -304,6 +304,11 @@ p {
 	width: 100%;
 	margin-bottom: 20px;
 
+	.payment__button_notify {
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+
 	&__col {
 		width: 50%;
 		display: table-cell;
@@ -317,6 +322,16 @@ p {
 
 	&__wrapper {
 		padding: 15px;
+
+		&_middle {
+			padding-left: 28px;
+			padding-right: 28px;
+		}
+
+		&_big {
+			padding-left: 49px;
+			padding-right: 48px;
+		}
 	}
 
 	&__title {
@@ -329,6 +344,42 @@ p {
 		&_sub {
 			margin: 20px 0 10px;
 		}
+
+		&_notify {
+			font-size: 18px;
+			margin-bottom: 0;
+
+			&_small {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__text {
+		&_notify {
+			font-size: 18px;
+
+			&_small {
+				font-size: 14px;
+				line-height: 15px;
+			}
+		}
+	}
+
+	&__status {
+		&_notify {
+			font-size: 18px;
+			text-transform: uppercase;
+			line-height: 35px;
+
+			&.green {
+				color: #008d1e;
+			}
+
+			&.red {
+				color: red;
+			}
+		}
 	}
 
 	.p2p__input-container {
@@ -338,6 +389,11 @@ p {
 		&_no_mb {
 			margin-bottom: 4px;
 		}
+	}
+
+	&__summ-notify {
+		font-size: 40px;
+		font-weight: @bold;
 	}
 
 	.form__input-container input {
@@ -1699,14 +1755,22 @@ p {
 	}
 
 	&__button {
+		display: block;
 		width: 100%;
 		max-width: 164px;
 		height: 36px;
+		line-height: 36px;
 		border: none;
 		background: #276bb1;
 		text-align: center;
 		color: #ffffff;
 		font-size: 14px;
+
+		&:focus,
+		&:hover {
+			text-decoration: none;
+			color: white;
+		}
 	}
 }
 
