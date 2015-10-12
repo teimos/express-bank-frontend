@@ -10,6 +10,7 @@ $(function(){
     $('#overlay').click(function() {
         $(this).removeClass('active');
         $('.modal-opened').hide().removeClass('modal-opened');
+        $('.choose-city__current-city').removeClass('active');
     });
 
     //Choose city
