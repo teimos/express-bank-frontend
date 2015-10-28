@@ -20,6 +20,5 @@
   },
   "_source": "git://github.com/idiot/unslider.git",
   "_target": "~1.0.0",
-  "_originalSource": "unslider",
-  "_direct": true
+  "_originalSource": "unslider"
 }

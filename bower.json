@@ -21,6 +21,7 @@
     "unslider": "~1.0.0",
     "jquery.event.swipe": "~0.5.4",
     "selectize": "~0.12.1",
-    "masonry": "~3.3.2"
+    "masonry": "~3.3.2",
+    "jquery.scrollTo": "~2.1.2"
   }
 }

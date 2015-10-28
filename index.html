@@ -31,6 +31,47 @@
     </div>
 </div>
 
+<div id="infoModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content br5">
+            <div class="modal-body info-modal">
+                <div class="info-modal__close text-right"><a data-dismiss="modal" href="javascript:void(0)">ЗАКРЫТЬ</a></div>
+                <div class="info-modal__content">
+                    Просим обратить внимание на то, что при пополнении вашего договора/лицевого счета/баланса карты оператор сотовой связи может взимать дополнительную комиссию.
+
+                    <div class="info-modal__item clearfix">
+                        <img src="assets/img/mobile/mts.jpg" alt="" />
+                        Сервисный сбор: 1,6%, минимум 50 руб. <br/>
+                        Зачисление: на следующий рабочий день <br/>
+                        Максимальная сумма платежа: 15 000 руб.
+                    </div>
+
+                    <div class="info-modal__item clearfix">
+                        <img src="assets/img/mobile/beeline.jpg" alt="" />
+                        Сервисный сбор: 1,6%, минимум 50 руб. <br/>
+                        Зачисление: на следующий рабочий день <br/>
+                        Максимальная сумма платежа: 15 000 руб.
+                    </div>
+
+                    <div class="info-modal__item clearfix">
+                        <img src="assets/img/mobile/megafon.jpg" alt="" />
+                        Сервисный сбор: 1,6%, минимум 50 руб. <br/>
+                        Зачисление: на следующий рабочий день <br/>
+                        Максимальная сумма платежа: 15 000 руб.
+                    </div>
+
+                    <div class="info-modal__item clearfix">
+                        <img src="assets/img/mobile/tele2.jpg" alt="" />
+                        Сервисный сбор: 1,6%, минимум 50 руб. <br/>
+                        Зачисление: на следующий рабочий день <br/>
+                        Максимальная сумма платежа: 15 000 руб.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div id="loading">
     <img src="assets/img/loading.gif" alt=""/>
 
@@ -365,6 +406,9 @@
             <div class="tabs__tab__accordeon__item__body no-padding-h no-padding-b active">
                 <div class="map">
                     <div class="row row-no-padding-inner">
+                        <div class="map_valign_middle col-md-1 hidden-xs hidden-sm">
+                            Показать:
+                        </div>
                         <div class="top_z_index col-xs-12 col-sm-5 col-md-4">
                             <select class="select map__type" name="type">
                                 <option value="0">Отображать все пункты</option>
@@ -374,7 +418,7 @@
                                 <option value="4">В любое время</option>
                             </select>
                         </div>
-                        <div class="col-xs-9 col-sm-5 col-md-6 col-sm-offset-1">
+                        <div class="col-xs-9 col-sm-5 col-md-5 col-sm-offset-1">
                             <div class="map__search">
                                 <input class="map__search__input" type="text" placeholder="Поиск по адресу"/>
 
@@ -526,7 +570,7 @@
 <div id="tab3" class="tabs__tab">
     <div class="tabs__tab__accordeon">
         <div id="tab3-item1" class="tabs__tab__accordeon__item active">
-            <a href="#tab6-item1" class="tabs__tab__accordeon__item__title">Онлайн платеж</a>
+            <a href="#tab3-item1" class="tabs__tab__accordeon__item__title">Онлайн платеж</a>
 
             <div class="tabs__tab__accordeon__item__body online-payment hidden-bg active">
                 <div class="instruction-title">Описание метода</div>
@@ -601,7 +645,7 @@
                     <li>
                         <p>Просим обратить внимание на то, что при пополнении вашего договора/лицевого счета/баланса карты оператор сотовой связи может взимать дополнительную комиссию.</p>
 
-                        <a href="">Подробнее</a>
+                        <a href="#infoModal" data-toggle="modal" data-target="#infoModal">Подробнее</a>
 
                         <form class="payment" action="">
                             <div class="payment__row payment__row_radio">
@@ -939,6 +983,7 @@
 <script src="assets/vendor/unslider/src/unslider.min.js"></script>
 <script src="assets/vendor/selectize/dist/js/standalone/selectize.min.js"></script>
 <script src="assets/vendor/masonry/dist/masonry.pkgd.js"></script>
+<script src="assets/vendor/jquery.scrollTo/jquery.scrollTo.min.js"></script>
 <script src="assets/js/all.min.js"></script>
 </body>
 </html>

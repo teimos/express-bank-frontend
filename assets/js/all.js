@@ -46,7 +46,11 @@ $(function(){
         e.preventDefault();
         var href =  $(this).attr('href');
         $(href).toggleClass('active');
-        $('.tabs__tab__accordeon__item__body', href).slideToggle();
+        $('.tabs__tab__accordeon__item__body', href).slideToggle(function(){
+            if ($(this).css('display') == 'block') {
+                $.scrollTo(href, 500);
+            }
+        });
     });
 
     //Accordeons

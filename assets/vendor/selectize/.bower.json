@@ -55,6 +55,5 @@
   },
   "_source": "git://github.com/brianreavis/selectize.js.git",
   "_target": "~0.12.1",
-  "_originalSource": "selectize",
-  "_direct": true
+  "_originalSource": "selectize"
 }
