@@ -1702,3 +1702,6 @@ p {
 .map_valign_middle {
   line-height: 38px;
 }
+.map__search__result div {
+  cursor: pointer;
+}
