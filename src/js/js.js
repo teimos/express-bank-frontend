@@ -29,6 +29,7 @@ $(function(){
         var href =  $(this).attr('href');
         $('.tabs__tab').removeClass('active');
         $(href).addClass('active');
+        $.scrollTo('.main-menu', 500);
 
         msnry();
 

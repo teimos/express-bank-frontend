@@ -7,6 +7,9 @@
 
 ## Versions ##
 
+v0.2.15 hotfix2
+- В js.js добавлена 32 строка: $.scrollTo('.main-menu', 500);
+
 v0.2.15
 
 - Добавлен плагин jquery.scrollTo
