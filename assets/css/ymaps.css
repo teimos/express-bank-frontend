@@ -1,0 +1,104 @@
+ymaps[class*="-b-cluster-tabs__menu-item-text"] {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Verdana, Arial, sans-serif;
+    padding: 6px 10px 6px 6px;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+ymaps[class*="-b-cluster-tabs__menu-item-text"]:hover {
+    background: #4987c7;
+    color: white;
+}
+
+ymaps[class*="-b-cluster-tabs__menu-item_current_yes"] ymaps[class*="-b-cluster-tabs__menu-item-text"]:hover {
+    background: #4987c7;
+    color: white;
+}
+
+ymaps[class*="-b-cluster-tabs__menu-item_current_yes"] {
+    background-color: #4987c7;
+    color: white;
+}
+
+ymaps[class*="-b-cluster-content__header"],
+ymaps[class*="-b-cluster-content__footer"] {
+    display: none;
+}
+
+ymaps[class*="-b-cluster-tabs__content-item"] {
+    height: 330px !important;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+ymaps[class*="-balloon__content"] {
+    text-align: left;
+}
+
+ymaps[class*="-copyright"] a {
+    border: 0;
+}
+
+
+.veb-balloon {
+    margin: 3px;
+    width: 330px;
+}
+
+.veb-balloon__address {
+    background: #276bb1;
+    color: white;
+    font: bold 11px Verdana;
+    margin: 5px 0 12px 0;
+    padding: 6px 10px 8px 10px;
+}
+
+.veb-balloon__time {
+    background: url('../img/map/clock.png') no-repeat 0 0;
+    font: normal 11px Verdana;
+    line-height: 16px;
+    margin: 0 10px 12px 10px;
+    padding-left: 22px;
+    width: 210px;
+    text-align: right;
+}
+
+.veb-balloon__phone {
+    font: normal 11px Verdana;
+    line-height: 16px;
+    margin: 0 10px 12px 10px;
+    width: 235px;
+    text-align: right;
+}
+
+.veb-balloon__phone b {
+    font-weight: normal;
+    color: #266bb1;
+}
+
+.veb-balloon__comission {
+    margin: 0 10px 12px 10px;
+    font: normal 11px Verdana;
+    color: #555555;
+}
+
+.veb-balloon__comission span {
+    font: normal 11px Verdana;
+    color: #e60002;
+}
+
+.veb-balloon__text {
+    margin: 0 10px 12px 10px;
+    font: normal 11px Verdana;
+}
+
+.veb-balloon__alert {
+    margin: 0 10px 12px 10px;
+    font: normal 9px Verdana;
+    color: #e60002;
+}
+

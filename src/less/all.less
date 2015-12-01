@@ -1644,7 +1644,19 @@ p {
 	}
 
 	.pay-btn {
-		display: block;
+
+        display: block;
+        width: 100%;
+        max-width: 150px; //164px;
+        height: 36px;
+        line-height: 36px;
+        border: none;
+        background: #276bb1;
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+
+		/*display: block;
 		width: 172px;
 		height: 56px;
 		line-height: 56px;
@@ -1662,7 +1674,7 @@ p {
 			position: absolute;
 			top: 0;
 			left: 61px;
-		}
+		}*/
 
 		&:focus,
 		&:hover {
@@ -1716,7 +1728,7 @@ p {
 		}
 
 		&_right {
-			padding-left: 35px;
+			padding-left: 120px;//35px;
 			text-align: right;
 			width: 100%;
 			max-width: 270px;
@@ -1758,7 +1770,7 @@ p {
 	&__button {
 		display: block;
 		width: 100%;
-		max-width: 164px;
+		max-width: 150px; //164px;
 		height: 36px;
 		line-height: 36px;
 		border: none;

@@ -7,7 +7,13 @@
 
 ## Versions ##
 
+v0.2.16
+
+- Добавлен ymaps.html (.veb-balloon) и assets/css/ymaps.css
+- Изменены стили кнопок в формах оплаты
+
 v0.2.15 hotfix2
+
 - В js.js добавлена 32 строка: $.scrollTo('.main-menu', 500);
 
 v0.2.15

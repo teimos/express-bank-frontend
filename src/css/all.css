@@ -1348,23 +1348,34 @@ p {
 }
 .payment .pay-btn {
   display: block;
-  width: 172px;
-  height: 56px;
-  line-height: 56px;
-  background: #276bb1 url('../img/icon-pay.png') 16px 13px no-repeat;
+  width: 100%;
+  max-width: 150px;
+  height: 36px;
+  line-height: 36px;
+  border: none;
+  background: #276bb1;
+  text-align: center;
   color: #ffffff;
-  padding-left: 84px;
-  position: relative;
-}
-.payment .pay-btn:before {
-  content: '';
-  display: block;
-  width: 1px;
-  height: 56px;
-  background: #75a0cd;
-  position: absolute;
-  top: 0;
-  left: 61px;
+  font-size: 14px;
+  /*display: block;
+		width: 172px;
+		height: 56px;
+		line-height: 56px;
+		background: #276bb1 url('../img/icon-pay.png') 16px 13px no-repeat;
+		color: #ffffff;
+		padding-left: 84px;
+		position: relative;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 1px;
+			height: 56px;
+			background: #75a0cd;
+			position: absolute;
+			top: 0;
+			left: 61px;
+		}*/
 }
 .payment .pay-btn:focus,
 .payment .pay-btn:hover {
@@ -1407,7 +1418,7 @@ p {
   max-width: 310px;
 }
 .payment__row_right {
-  padding-left: 35px;
+  padding-left: 120px;
   text-align: right;
   width: 100%;
   max-width: 270px;
@@ -1445,7 +1456,7 @@ p {
 .payment__button {
   display: block;
   width: 100%;
-  max-width: 164px;
+  max-width: 150px;
   height: 36px;
   line-height: 36px;
   border: none;
